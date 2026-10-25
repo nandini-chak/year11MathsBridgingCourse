@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 3A · Problems</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+    .stem p{margin:.42rem 0;line-height:1.5}
+    .stem .intro{margin-bottom:.7rem}
+    .howto{margin:.8rem 0 0;padding:.7rem .85rem;background:#f4f7fb;border-radius:12px;line-height:1.45}
+  </style>
+</head>
+<body data-section="3A" data-page="problems" data-nav-depth="2" data-auth-sub="Exercise 3A">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Exercise 3A</span>
+    <h1>Problems with worked solutions</h1>
+    <p>Attempt on paper first. Each part has its own solution button. Open one part at a time.</p>
+  </header>
+  <div class="wrap">
+    <div style="margin-top:1rem;display:flex;gap:.4rem;flex-wrap:wrap" class="no-print">
+      <button class="btn show" type="button" id="allOn">Show all solutions</button>
+      <button class="btn show" type="button" id="allOff">Hide all solutions</button>
+    </div>
+    <p class="howto"><strong>Read <span class="tex">f(x)</span> as “<span class="tex">f</span> of <span class="tex">x</span>”.</strong> It is the output of the rule. It is not <span class="tex">f</span> times <span class="tex">x</span>. To find <span class="tex">f(3)</span>, replace every <span class="tex">x</span> with 3, then calculate. Brackets matter: <span class="tex">(-3)^2=9</span>.</p>
+    <details class="teacher-note no-print"><summary><span class="ico">T</span> Teacher note</summary>
+      <div class="body">Answers follow the algebra of the question, checked against <em>3A-Worked-Solutions.pdf</em>. That PDF misprints several results. Use these instead: Q2(d) <span class="tex">p(-2)=5</span>; Q3(d) <span class="tex">y=2</span>; Q7(b) at <span class="tex">x=-1</span> is <span class="tex">y=3</span>; Q7(d) at <span class="tex">x=-3</span> and <span class="tex">x=3</span> is <span class="tex">-15</span> and <span class="tex">15</span>; Q9(b) <span class="tex">3L(-1)=-6</span>; Q14(a) <span class="tex">g(a+1)=2a-2</span>; Q16(b) <span class="tex">2-4\sqrt{3}</span>.</div>
+    </details>
+
+    <article class="q" id="q1">
+      <h2>1 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">Let <span class="tex">f(x)=2x+3</span>. Calculate the following function values.</p>
+        <p><strong>(a)</strong> <span class="tex">f(1)</span></p>
+        <p><strong>(b)</strong> <span class="tex">f(0)</span></p>
+        <p><strong>(c)</strong> <span class="tex">f(-2)</span></p>
+        <p><strong>(d)</strong> <span class="tex">f(4)</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">f(a)</span> means replace every <span class="tex">x</span> in the rule with the number <span class="tex">a</span>.</p>
+          <p class="step"><span class="tex">f(1)=2\times 1+3=2+3=5</span>.</p>
+          <p class="final"><span class="tex">f(1)=5</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Replace <span class="tex">x</span> with 0. <span class="tex">f(0)=2\times 0+3=0+3=3</span>.</p>
+          <p class="final"><span class="tex">f(0)=3</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Replace <span class="tex">x</span> with <span class="tex">-2</span>. <span class="tex">f(-2)=2\times(-2)+3=-4+3=-1</span>.</p>
+          <p class="final"><span class="tex">f(-2)=-1</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Replace <span class="tex">x</span> with 4. <span class="tex">f(4)=2\times 4+3=8+3=11</span>.</p>
+          <p class="final"><span class="tex">f(4)=11</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q2">
+      <h2>2 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">Let <span class="tex">p(x)=x^2-2x-3</span>. Determine the following.</p>
+        <p><strong>(a)</strong> <span class="tex">p(0)</span> &nbsp; <strong>(b)</strong> <span class="tex">p(4)</span> &nbsp; <strong>(c)</strong> <span class="tex">p(3)</span> &nbsp; <strong>(d)</strong> <span class="tex">p(-2)</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Do the power first. <span class="tex">0^2=0</span>. Then multiply. Then add and subtract from left to right.</p>
+          <p class="step"><span class="tex">p(0)=0^2-2\times 0-3=0-0-3=-3</span>.</p>
+          <p class="final"><span class="tex">p(0)=-3</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">p(4)=4^2-2\times 4-3=16-8-3=5</span>.</p>
+          <p class="final"><span class="tex">p(4)=5</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">p(3)=3^2-2\times 3-3=9-6-3=0</span>.</p>
+          <p class="final"><span class="tex">p(3)=0</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">(-2)^2=4</span>, and <span class="tex">-2\times(-2)=+4</span>.</p>
+          <p class="step"><span class="tex">p(-2)=4-2\times(-2)-3=4+4-3=5</span>.</p>
+          <p class="final"><span class="tex">p(-2)=5</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q3">
+      <h2>3 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">Find the value of <span class="tex">y=5+2x-x^2</span> at each value of <span class="tex">x</span>.</p>
+        <p><strong>(a)</strong> <span class="tex">0</span> &nbsp; <strong>(b)</strong> <span class="tex">5</span> &nbsp; <strong>(c)</strong> <span class="tex">-2</span> &nbsp; <strong>(d)</strong> <span class="tex">-1</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> The letter <span class="tex">y</span> is the output. Replace <span class="tex">x</span>, square first, then multiply, then add.</p>
+          <p class="step"><span class="tex">y=5+2\times 0-0^2=5+0-0=5</span>.</p>
+          <p class="final">When <span class="tex">x=0</span>, <span class="tex">y=5</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">y=5+2\times 5-5^2=5+10-25=-10</span>.</p>
+          <p class="final">When <span class="tex">x=5</span>, <span class="tex">y=-10</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">(-2)^2=4</span> and <span class="tex">2\times(-2)=-4</span>.</p>
+          <p class="step"><span class="tex">y=5+2\times(-2)-(-2)^2=5-4-4=-3</span>.</p>
+          <p class="final">When <span class="tex">x=-2</span>, <span class="tex">y=-3</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">(-1)^2=1</span> and <span class="tex">2\times(-1)=-2</span>.</p>
+          <p class="step"><span class="tex">y=5+2\times(-1)-(-1)^2=5-2-1=2</span>.</p>
+          <p class="final">When <span class="tex">x=-1</span>, <span class="tex">y=2</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q4">
+      <h2>4 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">Find <span class="tex">h(-3)</span>, <span class="tex">h(1)</span> and <span class="tex">h(5)</span> for each function.</p>
+        <p><strong>(a)</strong> <span class="tex">h(x)=2x+2</span></p>
+        <p><strong>(b)</strong> <span class="tex">h(x)=\dfrac{1}{x}</span></p>
+        <p><strong>(c)</strong> <span class="tex">h(x)=3x-x^2</span></p>
+        <p><strong>(d)</strong> <span class="tex">h(x)=\sqrt{x+4}</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> For each input, replace <span class="tex">x</span> and calculate. Do all three the same way.</p>
+          <p class="step"><span class="tex">h(-3)=2\times(-3)+2=-6+2=-4</span>.</p>
+          <p class="step"><span class="tex">h(1)=2\times 1+2=4</span>.</p>
+          <p class="step"><span class="tex">h(5)=2\times 5+2=12</span>.</p>
+          <p class="final"><span class="tex">-4,\; 4,\; 12</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">\dfrac{1}{x}</span> means 1 divided by the input. A negative input gives a negative output.</p>
+          <p class="step"><span class="tex">h(-3)=\dfrac{1}{-3}=-\dfrac{1}{3}</span>.</p>
+          <p class="step"><span class="tex">h(1)=\dfrac{1}{1}=1</span>.</p>
+          <p class="step"><span class="tex">h(5)=\dfrac{1}{5}</span>.</p>
+          <p class="final"><span class="tex">-\dfrac{1}{3},\; 1,\; \dfrac{1}{5}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Square first, then subtract that square from <span class="tex">3x</span>.</p>
+          <p class="step"><span class="tex">h(-3)=3\times(-3)-(-3)^2=-9-9=-18</span>.</p>
+          <p class="step"><span class="tex">h(1)=3\times 1-1^2=3-1=2</span>.</p>
+          <p class="step"><span class="tex">h(5)=3\times 5-5^2=15-25=-10</span>.</p>
+          <p class="final"><span class="tex">-18,\; 2,\; -10</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">\sqrt{\ }</span> means “what number times itself gives the inside?” Add 4 to <span class="tex">x</span> first, then take the square root.</p>
+          <p class="step"><span class="tex">h(-3)=\sqrt{-3+4}=\sqrt{1}=1</span>.</p>
+          <p class="step"><span class="tex">h(1)=\sqrt{1+4}=\sqrt{5}</span>. 5 is not a perfect square, so leave it as <span class="tex">\sqrt{5}</span>.</p>
+          <p class="step"><span class="tex">h(5)=\sqrt{5+4}=\sqrt{9}=3</span>.</p>
+          <p class="final"><span class="tex">1,\; \sqrt{5},\; 3</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q5">
+      <h2>5 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">Write down <span class="tex">g(t)</span> for each function. The letter <span class="tex">t</span> is just another name for the input.</p>
+        <p><strong>(a)</strong> <span class="tex">g(x)=3x+1</span></p>
+        <p><strong>(b)</strong> <span class="tex">g(x)=x^2-2x+8</span></p>
+        <p><strong>(c)</strong> <span class="tex">g(x)=x-\sqrt{x}</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">g(t)</span> means replace every <span class="tex">x</span> with <span class="tex">t</span>. There is no number to calculate, so the answer stays in terms of <span class="tex">t</span>.</p>
+          <p class="final"><span class="tex">g(t)=3t+1</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Replace each <span class="tex">x</span> with <span class="tex">t</span>.</p>
+          <p class="final"><span class="tex">g(t)=t^2-2t+8</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Both the plain <span class="tex">x</span> and the <span class="tex">x</span> inside the square root become <span class="tex">t</span>.</p>
+          <p class="final"><span class="tex">g(t)=t-\sqrt{t}</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q6">
+      <h2>6 · Exercise 3A <span class="band">Foundation</span></h2>
+      <div class="stem">
+        <p class="intro">In each case do the given substitution, then expand and simplify.</p>
+        <p><strong>(a)</strong> <span class="tex">y=2-x</span> at <span class="tex">x=p-1</span></p>
+        <p><strong>(b)</strong> <span class="tex">y=2x-5</span> at <span class="tex">x=q+2</span></p>
+        <p><strong>(c)</strong> <span class="tex">y=x^2-x</span> at <span class="tex">x=a+1</span></p>
+        <p><strong>(d)</strong> <span class="tex">y=x^2-3x-4</span> at <span class="tex">x=b-2</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Replacing <span class="tex">x</span> with a bracket means the whole bracket goes in. A minus in front of a bracket changes the sign of each term inside.</p>
+          <p class="step"><span class="tex">y=2-(p-1)=2-p+1=3-p</span>.</p>
+          <p class="final"><span class="tex">y=3-p</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">y=2(q+2)-5=2q+4-5=2q-1</span>.</p>
+          <p class="final"><span class="tex">y=2q-1</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(a+1)^2=a^2+2a+1</span>.</p>
+          <p class="step"><span class="tex">y=(a+1)^2-(a+1)=a^2+2a+1-a-1</span>.</p>
+          <p class="step"><span class="tex">a^2</span> stays. <span class="tex">2a-a=a</span>. <span class="tex">1-1=0</span>.</p>
+          <p class="final"><span class="tex">y=a^2+a</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(b-2)^2=b^2-4b+4</span>. Minus a bracket: <span class="tex">-3(b-2)=-3b+6</span>.</p>
+          <p class="step"><span class="tex">y=(b-2)^2-3(b-2)-4=b^2-4b+4-3b+6-4</span>.</p>
+          <p class="step"><span class="tex">b</span> terms: <span class="tex">-4b-3b=-7b</span>. Numbers: <span class="tex">4+6-4=6</span>.</p>
+          <p class="final"><span class="tex">y=b^2-7b+6</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q7">
+      <h2>7 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">Copy and complete the table of values for each function.</p>
+        <p><strong>(a)</strong> <span class="tex">y=2x+1</span> for <span class="tex">x=-1,0,1</span></p>
+        <p><strong>(b)</strong> <span class="tex">y=x^2-2x</span> for <span class="tex">x=-1,0,1,2,3</span></p>
+        <p><strong>(c)</strong> <span class="tex">f(x)=1-x^2</span> for <span class="tex">x=-2,-1,0,1,2</span></p>
+        <p><strong>(d)</strong> <span class="tex">f(x)=x^3-4x</span> for <span class="tex">x=-3,-2,-1,0,1,2,3</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> One row of the table is one substitution. <span class="tex">y=2x+1</span> means “double the input, then add 1”.</p>
+          <p class="step"><span class="tex">x=-1</span>: <span class="tex">2\times(-1)+1=-1</span>.</p>
+          <p class="step"><span class="tex">x=0</span>: <span class="tex">0+1=1</span>.</p>
+          <p class="step"><span class="tex">x=1</span>: <span class="tex">2+1=3</span>.</p>
+          <table class="sol-table">
+            <tr><th><span class="tex">x</span></th><td><span class="tex">-1</span></td><td>0</td><td>1</td></tr>
+            <tr><th><span class="tex">y</span></th><td><span class="tex">-1</span></td><td>1</td><td>3</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Square the input, then subtract twice the input.</p>
+          <p class="step"><span class="tex">x=-1</span>: <span class="tex">(-1)^2-2\times(-1)=1+2=3</span>.</p>
+          <p class="step"><span class="tex">x=0</span>: <span class="tex">0-0=0</span>.</p>
+          <p class="step"><span class="tex">x=1</span>: <span class="tex">1-2=-1</span>.</p>
+          <p class="step"><span class="tex">x=2</span>: <span class="tex">4-4=0</span>.</p>
+          <p class="step"><span class="tex">x=3</span>: <span class="tex">9-6=3</span>.</p>
+          <table class="sol-table">
+            <tr><th><span class="tex">x</span></th><td><span class="tex">-1</span></td><td>0</td><td>1</td><td>2</td><td>3</td></tr>
+            <tr><th><span class="tex">y</span></th><td>3</td><td>0</td><td><span class="tex">-1</span></td><td>0</td><td>3</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Square the input, then subtract that square from 1.</p>
+          <p class="step"><span class="tex">x=-2</span>: <span class="tex">1-4=-3</span>. <span class="tex">x=-1</span>: <span class="tex">1-1=0</span>. <span class="tex">x=0</span>: <span class="tex">1-0=1</span>.</p>
+          <p class="step"><span class="tex">x=1</span>: <span class="tex">1-1=0</span>. <span class="tex">x=2</span>: <span class="tex">1-4=-3</span>.</p>
+          <table class="sol-table">
+            <tr><th><span class="tex">x</span></th><td><span class="tex">-2</span></td><td><span class="tex">-1</span></td><td>0</td><td>1</td><td>2</td></tr>
+            <tr><th><span class="tex">f(x)</span></th><td><span class="tex">-3</span></td><td>0</td><td>1</td><td>0</td><td><span class="tex">-3</span></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> A cube keeps the sign. <span class="tex">(-3)^3=-27</span>. Then <span class="tex">-4x</span> means subtract 4 times <span class="tex">x</span>. Subtracting a negative is the same as adding.</p>
+          <p class="step"><span class="tex">x=-3</span>: <span class="tex">(-27)-4\times(-3)=-27+12=-15</span>.</p>
+          <p class="step"><span class="tex">x=-2</span>: <span class="tex">-8-4\times(-2)=-8+8=0</span>.</p>
+          <p class="step"><span class="tex">x=-1</span>: <span class="tex">-1-4\times(-1)=-1+4=3</span>.</p>
+          <p class="step"><span class="tex">x=0</span>: <span class="tex">0-0=0</span>.</p>
+          <p class="step"><span class="tex">x=1</span>: <span class="tex">1-4=-3</span>.</p>
+          <p class="step"><span class="tex">x=2</span>: <span class="tex">8-8=0</span>.</p>
+          <p class="step"><span class="tex">x=3</span>: <span class="tex">27-12=15</span>.</p>
+          <table class="sol-table">
+            <tr><th><span class="tex">x</span></th><td><span class="tex">-3</span></td><td><span class="tex">-2</span></td><td><span class="tex">-1</span></td><td>0</td><td>1</td><td>2</td><td>3</td></tr>
+            <tr><th><span class="tex">f(x)</span></th><td><span class="tex">-15</span></td><td>0</td><td>3</td><td>0</td><td><span class="tex">-3</span></td><td>0</td><td>15</td></tr>
+          </table>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q8">
+      <h2>8 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">I think of a number, then subtract the square of that number from 6. Let <span class="tex">x</span> be the number and let <span class="tex">f(x)</span> be the final answer.</p>
+        <p><strong>(a)</strong> Write down the function rule.</p>
+        <p><strong>(b)</strong> Copy and complete the table for <span class="tex">x=-2,-1,0,1,2</span>.</p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="step">“Subtract the square from 6” means start at 6 and take away <span class="tex">x^2</span>. It is <span class="tex">6-x^2</span>, not <span class="tex">x^2-6</span>.</p>
+          <p class="final"><span class="tex">f(x)=6-x^2</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method as a table ·</strong> Square the input, then subtract that from 6.</p>
+          <p class="step"><span class="tex">f(-2)=6-4=2</span>. <span class="tex">f(-1)=6-1=5</span>. <span class="tex">f(0)=6-0=6</span>.</p>
+          <p class="step"><span class="tex">f(1)=6-1=5</span>. <span class="tex">f(2)=6-4=2</span>.</p>
+          <table class="sol-table">
+            <tr><th><span class="tex">x</span></th><td><span class="tex">-2</span></td><td><span class="tex">-1</span></td><td>0</td><td>1</td><td>2</td></tr>
+            <tr><th><span class="tex">f(x)</span></th><td>2</td><td>5</td><td>6</td><td>5</td><td>2</td></tr>
+          </table>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q9">
+      <h2>9 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">For <span class="tex">L(x)=3x+1</span>, determine:</p>
+        <p><strong>(a)</strong> <span class="tex">L(1)-2</span> &nbsp; <strong>(b)</strong> <span class="tex">3L(-1)</span> &nbsp; <strong>(c)</strong> <span class="tex">L(1)+L(2)</span> &nbsp; <strong>(d)</strong> <span class="tex">L(9)\div L(2)</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Work out the function value first. Then do the extra arithmetic outside the brackets.</p>
+          <p class="step"><span class="tex">L(1)=3\times 1+1=4</span>.</p>
+          <p class="step"><span class="tex">L(1)-2=4-2=2</span>.</p>
+          <p class="final"><span class="tex">2</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Find <span class="tex">L(-1)</span> first, then multiply that output by 3.</p>
+          <p class="step"><span class="tex">L(-1)=3\times(-1)+1=-3+1=-2</span>.</p>
+          <p class="step"><span class="tex">3L(-1)=3\times(-2)=-6</span>. Three times a negative number is negative.</p>
+          <p class="final"><span class="tex">-6</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Find each output, then add them.</p>
+          <p class="step"><span class="tex">L(1)=4</span>. <span class="tex">L(2)=3\times 2+1=7</span>.</p>
+          <p class="step"><span class="tex">L(1)+L(2)=4+7=11</span>.</p>
+          <p class="final"><span class="tex">11</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> Find each output, then divide.</p>
+          <p class="step"><span class="tex">L(9)=3\times 9+1=28</span>. <span class="tex">L(2)=7</span>.</p>
+          <p class="step"><span class="tex">28\div 7=4</span>.</p>
+          <p class="final"><span class="tex">4</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q10">
+      <h2>10 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">Given <span class="tex">P(x)=x^2-2x-4</span>, find:</p>
+        <p><strong>(a)</strong> <span class="tex">P(\sqrt{2})</span> &nbsp; <strong>(b)</strong> <span class="tex">P(\sqrt{7})</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">(\sqrt{2})^2=2</span>. A square root and a square undo each other.</p>
+          <p class="step"><span class="tex">P(\sqrt{2})=(\sqrt{2})^2-2\sqrt{2}-4=2-2\sqrt{2}-4</span>.</p>
+          <p class="step">Numbers: <span class="tex">2-4=-2</span>. The <span class="tex">-2\sqrt{2}</span> stays, because <span class="tex">\sqrt{2}</span> is not a whole number.</p>
+          <p class="final"><span class="tex">P(\sqrt{2})=-2-2\sqrt{2}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">(\sqrt{7})^2=7</span>.</p>
+          <p class="step"><span class="tex">P(\sqrt{7})=7-2\sqrt{7}-4=3-2\sqrt{7}</span>.</p>
+          <p class="final"><span class="tex">P(\sqrt{7})=3-2\sqrt{7}</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q11">
+      <h2>11 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p><strong>(a)</strong> Write <span class="tex">3x+4y+5=0</span> as a function with independent variable <span class="tex">x</span>.</p>
+        <p><strong>(b)</strong> Write <span class="tex">3x+4y+5=0</span> as a function with independent variable <span class="tex">y</span>.</p>
+        <p><strong>(c)</strong> Write <span class="tex">4+xy=0</span> as a function with dependent variable <span class="tex">y</span>.</p>
+        <p><strong>(d)</strong> The volume of a cube with side <span class="tex">s</span> is <span class="tex">V=s^3</span>, and its surface area is <span class="tex">A=6s^2</span>. Write each formula as a function with dependent variable <span class="tex">s</span>.</p>
+        <p><strong>(e)</strong> A rectangle has area <span class="tex">100\,\mathrm{m}^2</span> and sides <span class="tex">\ell</span> and <span class="tex">b</span>, so <span class="tex">\ell b=100</span>. Write this with</p>
+        <p style="margin-left:1rem"><strong>(i)</strong> <span class="tex">\ell</span> as the dependent variable &nbsp; <strong>(ii)</strong> <span class="tex">\ell</span> as the independent variable.</p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Independent variable <span class="tex">x</span> means <span class="tex">x</span> is the input, so make <span class="tex">y</span> the subject (get <span class="tex">y</span> alone).</p>
+          <p class="step">Subtract <span class="tex">3x+5</span> from both sides: <span class="tex">4y=-3x-5</span>.</p>
+          <p class="step">Divide by 4: <span class="tex">y=\dfrac{-3x-5}{4}</span>.</p>
+          <p class="final"><span class="tex">y=\dfrac{-3x-5}{4}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same idea ·</strong> Independent variable <span class="tex">y</span> means make <span class="tex">x</span> the subject.</p>
+          <p class="step"><span class="tex">3x=-4y-5</span>, so <span class="tex">x=\dfrac{-4y-5}{3}</span>.</p>
+          <p class="final"><span class="tex">x=\dfrac{-4y-5}{3}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step">Dependent variable <span class="tex">y</span> means <span class="tex">y</span> is the output. Get <span class="tex">y</span> alone.</p>
+          <p class="step"><span class="tex">xy=-4</span>, so <span class="tex">y=\dfrac{-4}{x}</span>, provided <span class="tex">x\neq 0</span>.</p>
+          <p class="final"><span class="tex">y=-\dfrac{4}{x}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Dependent variable <span class="tex">s</span> means <span class="tex">s</span> is the output. Undo a cube with a cube root. Undo a square with a square root. A side length is positive.</p>
+          <p class="step">From <span class="tex">V=s^3</span>, <span class="tex">s=\sqrt[3]{V}</span>.</p>
+          <p class="step">From <span class="tex">A=6s^2</span>, <span class="tex">s^2=\dfrac{A}{6}</span>, so <span class="tex">s=\sqrt{\dfrac{A}{6}}</span>.</p>
+          <p class="final"><span class="tex">s=\sqrt[3]{V}</span> and <span class="tex">s=\sqrt{\dfrac{A}{6}}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · e i</button>
+        <div class="sol">
+          <p class="step">Dependent <span class="tex">\ell</span> means get <span class="tex">\ell</span> alone. Divide both sides of <span class="tex">\ell b=100</span> by <span class="tex">b</span>.</p>
+          <p class="final"><span class="tex">\ell=\dfrac{100}{b}</span>, with <span class="tex">b\neq 0</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · e ii</button>
+        <div class="sol">
+          <p class="step"><strong>Same formula, other letter out ·</strong> Independent <span class="tex">\ell</span> means <span class="tex">\ell</span> stays on the right. Get <span class="tex">b</span> alone.</p>
+          <p class="final"><span class="tex">b=\dfrac{100}{\ell}</span>, with <span class="tex">\ell\neq 0</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q12">
+      <h2>12 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p>A restaurant charges a cover fee of <span class="tex">\$50</span>, then <span class="tex">\$20</span> per person. Write <span class="tex">C</span>, the total cost in dollars, as a function of <span class="tex">x</span>, the number of people.</p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution</button>
+        <div class="sol">
+          <p class="step">The <span class="tex">\$50</span> is paid once. Each person adds <span class="tex">\$20</span>, so <span class="tex">x</span> people add <span class="tex">20x</span>.</p>
+          <p class="step"><span class="tex">x</span> is a whole number of people: <span class="tex">0,1,2,\ldots</span></p>
+          <p class="final"><span class="tex">C=50+20x</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q13">
+      <h2>13 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">In each case explain why the function value cannot be found.</p>
+        <p><strong>(a)</strong> <span class="tex">F(0)</span>, where <span class="tex">F(x)=\sqrt{x-4}</span></p>
+        <p><strong>(b)</strong> <span class="tex">H(3)</span>, where <span class="tex">H(x)=\sqrt{1-x^2}</span></p>
+        <p><strong>(c)</strong> <span class="tex">g(-2)</span>, where <span class="tex">g(x)=\dfrac{1}{2+x}</span></p>
+        <p><strong>(d)</strong> <span class="tex">f(0)</span>, where <span class="tex">f(x)=\dfrac{1}{x}</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> In this course, the square root of a negative number is not a real number. The value is undefined.</p>
+          <p class="step"><span class="tex">F(0)=\sqrt{0-4}=\sqrt{-4}</span>.</p>
+          <p class="final">Inside the square root is negative, so <span class="tex">F(0)</span> cannot be found.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same idea ·</strong> <span class="tex">H(3)=\sqrt{1-3^2}=\sqrt{1-9}=\sqrt{-8}</span>.</p>
+          <p class="final">Inside the square root is negative, so <span class="tex">H(3)</span> is not a real number.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> A fraction with denominator 0 is undefined. You cannot divide by zero.</p>
+          <p class="step"><span class="tex">g(-2)=\dfrac{1}{2+(-2)}=\dfrac{1}{0}</span>.</p>
+          <p class="final">The denominator is 0, so <span class="tex">g(-2)</span> cannot be found.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same idea ·</strong> <span class="tex">f(0)=\dfrac{1}{0}</span>.</p>
+          <p class="final">The denominator is 0, so <span class="tex">f(0)</span> cannot be found.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q14">
+      <h2>14 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">Find <span class="tex">g(a)</span>, <span class="tex">g(-a)</span> and <span class="tex">g(a+1)</span> for each function.</p>
+        <p><strong>(a)</strong> <span class="tex">g(x)=2x-4</span></p>
+        <p><strong>(b)</strong> <span class="tex">g(x)=2-x</span></p>
+        <p><strong>(c)</strong> <span class="tex">g(x)=x^2</span></p>
+        <p><strong>(d)</strong> <span class="tex">g(x)=\dfrac{1}{x-1}</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> Put the whole new input in place of <span class="tex">x</span>. For <span class="tex">g(-a)</span>, the input is <span class="tex">-a</span>. For <span class="tex">g(a+1)</span>, the input is the bracket <span class="tex">(a+1)</span>.</p>
+          <p class="step"><span class="tex">g(a)=2a-4</span>.</p>
+          <p class="step"><span class="tex">g(-a)=2\times(-a)-4=-2a-4</span>.</p>
+          <p class="step"><span class="tex">g(a+1)=2(a+1)-4=2a+2-4=2a-2</span>.</p>
+          <p class="final"><span class="tex">2a-4,\; -2a-4,\; 2a-2</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">g(a)=2-a</span>.</p>
+          <p class="step"><span class="tex">g(-a)=2-(-a)=2+a</span>.</p>
+          <p class="step"><span class="tex">g(a+1)=2-(a+1)=2-a-1=1-a</span>.</p>
+          <p class="final"><span class="tex">2-a,\; 2+a,\; 1-a</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(-a)^2=a^2</span> and <span class="tex">(a+1)^2=a^2+2a+1</span>.</p>
+          <p class="step"><span class="tex">g(a)=a^2</span>.</p>
+          <p class="step"><span class="tex">g(-a)=(-a)^2=a^2</span>.</p>
+          <p class="step"><span class="tex">g(a+1)=(a+1)^2=a^2+2a+1</span>.</p>
+          <p class="final"><span class="tex">a^2,\; a^2,\; a^2+2a+1</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><span class="tex">g(a)=\dfrac{1}{a-1}</span>.</p>
+          <p class="step"><span class="tex">g(-a)=\dfrac{1}{-a-1}=-\dfrac{1}{a+1}</span>.</p>
+          <p class="step"><span class="tex">g(a+1)=\dfrac{1}{(a+1)-1}=\dfrac{1}{a}</span>.</p>
+          <p class="final"><span class="tex">\dfrac{1}{a-1},\; -\dfrac{1}{a+1},\; \dfrac{1}{a}</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q15">
+      <h2>15 · Exercise 3A <span class="band dev">Development</span></h2>
+      <div class="stem">
+        <p class="intro">Find <span class="tex">F(t)-2</span> and <span class="tex">F(t-2)</span> for each function. These are different jobs.</p>
+        <p><strong>(a)</strong> <span class="tex">F(x)=5x+2</span></p>
+        <p><strong>(b)</strong> <span class="tex">F(x)=\sqrt{x}</span></p>
+        <p><strong>(c)</strong> <span class="tex">F(x)=x^2+2x</span></p>
+        <p><strong>(d)</strong> <span class="tex">F(x)=2-x^2</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">F(t)-2</span> means find the output, then subtract 2. <span class="tex">F(t-2)</span> means change the input to <span class="tex">t-2</span> before you use the rule.</p>
+          <p class="step"><span class="tex">F(t)=5t+2</span>, so <span class="tex">F(t)-2=5t+2-2=5t</span>.</p>
+          <p class="step"><span class="tex">F(t-2)=5(t-2)+2=5t-10+2=5t-8</span>.</p>
+          <p class="final"><span class="tex">5t</span> and <span class="tex">5t-8</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">F(t)=\sqrt{t}</span>, so <span class="tex">F(t)-2=\sqrt{t}-2</span>. The <span class="tex">-2</span> is outside the square root.</p>
+          <p class="step"><span class="tex">F(t-2)=\sqrt{t-2}</span>. The <span class="tex">-2</span> is inside the square root.</p>
+          <p class="final"><span class="tex">\sqrt{t}-2</span> and <span class="tex">\sqrt{t-2}</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(t-2)^2=t^2-4t+4</span>.</p>
+          <p class="step"><span class="tex">F(t)=t^2+2t</span>, so <span class="tex">F(t)-2=t^2+2t-2</span>.</p>
+          <p class="step"><span class="tex">F(t-2)=(t-2)^2+2(t-2)=t^2-4t+4+2t-4=t^2-2t</span>.</p>
+          <p class="final"><span class="tex">t^2+2t-2</span> and <span class="tex">t^2-2t</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · d</button>
+        <div class="sol">
+          <p class="step"><strong>Same method ·</strong> <span class="tex">F(t)=2-t^2</span>, so <span class="tex">F(t)-2=2-t^2-2=-t^2</span>.</p>
+          <p class="step"><span class="tex">F(t-2)=2-(t-2)^2=2-(t^2-4t+4)=2-t^2+4t-4=-t^2+4t-2</span>.</p>
+          <p class="final"><span class="tex">-t^2</span> and <span class="tex">-t^2+4t-2</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q16">
+      <h2>16 · Exercise 3A <span class="band ch">Challenge</span></h2>
+      <div class="stem">
+        <p class="intro">Again using <span class="tex">P(x)=x^2-2x-4</span>, find:</p>
+        <p><strong>(a)</strong> <span class="tex">P(1+\sqrt{5})</span> &nbsp; <strong>(b)</strong> <span class="tex">P(\sqrt{3}-1)</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(1+\sqrt{5})^2=1+2\sqrt{5}+5=6+2\sqrt{5}</span>. Also <span class="tex">(\sqrt{5})^2=5</span>.</p>
+          <p class="step"><span class="tex">P(1+\sqrt{5})=(1+\sqrt{5})^2-2(1+\sqrt{5})-4</span>.</p>
+          <p class="step"><span class="tex">=6+2\sqrt{5}-2-2\sqrt{5}-4</span>.</p>
+          <p class="step">The <span class="tex">2\sqrt{5}</span> and <span class="tex">-2\sqrt{5}</span> cancel. Numbers: <span class="tex">6-2-4=0</span>.</p>
+          <p class="final"><span class="tex">P(1+\sqrt{5})=0</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(\sqrt{3}-1)^2=3-2\sqrt{3}+1=4-2\sqrt{3}</span>.</p>
+          <p class="step"><span class="tex">P(\sqrt{3}-1)=(\sqrt{3}-1)^2-2(\sqrt{3}-1)-4</span>.</p>
+          <p class="step"><span class="tex">=4-2\sqrt{3}-2\sqrt{3}+2-4</span>.</p>
+          <p class="step">Square-root terms: <span class="tex">-2\sqrt{3}-2\sqrt{3}=-4\sqrt{3}</span>. Numbers: <span class="tex">4+2-4=2</span>.</p>
+          <p class="final"><span class="tex">P(\sqrt{3}-1)=2-4\sqrt{3}</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q17">
+      <h2>17 · Exercise 3A <span class="band ch">Challenge</span></h2>
+      <div class="stem">
+        <p class="intro">If <span class="tex">f(x)=x^2+5x</span>, find in simplest form:</p>
+        <p><strong>(a)</strong> <span class="tex">\dfrac{f(1+h)-f(1)}{h}</span></p>
+        <p><strong>(b)</strong> <span class="tex">\dfrac{f(p)-f(q)}{p-q}</span></p>
+        <p><strong>(c)</strong> <span class="tex">\dfrac{f(x+h)-f(x)}{h}</span></p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> This fraction is “change in output, divided by change in input”. Work out the top fully before you divide. We need <span class="tex">h\neq 0</span>, or the denominator is zero.</p>
+          <p class="step"><span class="tex">f(1)=1^2+5\times 1=6</span>.</p>
+          <p class="step"><span class="tex">f(1+h)=(1+h)^2+5(1+h)=1+2h+h^2+5+5h=h^2+7h+6</span>.</p>
+          <p class="step">Top: <span class="tex">h^2+7h+6-6=h^2+7h=h(h+7)</span>.</p>
+          <p class="step">Divide by <span class="tex">h</span>: <span class="tex">\dfrac{h(h+7)}{h}=h+7</span>.</p>
+          <p class="final"><span class="tex">h+7</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Formula:</strong> <span class="tex">p^2-q^2=(p-q)(p+q)</span>. We need <span class="tex">p\neq q</span>.</p>
+          <p class="step"><span class="tex">f(p)=p^2+5p</span> and <span class="tex">f(q)=q^2+5q</span>.</p>
+          <p class="step">Top: <span class="tex">p^2+5p-q^2-5q=(p^2-q^2)+5(p-q)=(p-q)(p+q)+5(p-q)</span>.</p>
+          <p class="step">Factor <span class="tex">p-q</span>: <span class="tex">(p-q)(p+q+5)</span>.</p>
+          <p class="step">Divide by <span class="tex">p-q</span>: <span class="tex">p+q+5</span>.</p>
+          <p class="final"><span class="tex">p+q+5</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step"><strong>Same method as (a) ·</strong> Replace the input <span class="tex">1</span> with a general <span class="tex">x</span>. Need <span class="tex">h\neq 0</span>.</p>
+          <p class="step"><span class="tex">f(x+h)=(x+h)^2+5(x+h)=x^2+2xh+h^2+5x+5h</span>.</p>
+          <p class="step"><span class="tex">f(x)=x^2+5x</span>, so the top is <span class="tex">x^2+2xh+h^2+5x+5h-x^2-5x=2xh+h^2+5h</span>.</p>
+          <p class="step">Factor <span class="tex">h</span>: <span class="tex">h(2x+h+5)</span>. Divide by <span class="tex">h</span>.</p>
+          <p class="final"><span class="tex">2x+h+5</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="q" id="q18">
+      <h2>18 · Exercise 3A <span class="band ch">Challenge</span></h2>
+      <div class="stem">
+        <p><strong>(a)</strong> If <span class="tex">f(x)=x^4+2x^2+3</span>, show that <span class="tex">f(-x)=f(x)</span> for all <span class="tex">x</span>.</p>
+        <p><strong>(b)</strong> If <span class="tex">g(x)=x^3+\dfrac{4}{x}</span>, show that <span class="tex">g(-x)=-g(x)</span> whenever <span class="tex">x\neq 0</span>.</p>
+        <p><strong>(c)</strong> If <span class="tex">h(x)=\dfrac{x}{x^2+1}</span>, show that <span class="tex">h\!\left(\dfrac{1}{x}\right)=h(x)</span> whenever <span class="tex">x\neq 0</span>.</p>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · a</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> An even power of a negative number is positive. <span class="tex">(-x)^2=x^2</span> and <span class="tex">(-x)^4=x^4</span>.</p>
+          <p class="step"><span class="tex">f(-x)=(-x)^4+2(-x)^2+3=x^4+2x^2+3</span>.</p>
+          <p class="step">That is exactly <span class="tex">f(x)</span>.</p>
+          <p class="final"><span class="tex">f(-x)=f(x)</span> for every <span class="tex">x</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · b</button>
+        <div class="sol">
+          <p class="formula-quick"><strong>Quick fact:</strong> An odd power keeps the minus. <span class="tex">(-x)^3=-x^3</span>. Also <span class="tex">\dfrac{4}{-x}=-\dfrac{4}{x}</span>. We already need <span class="tex">x\neq 0</span> so that <span class="tex">\dfrac{4}{x}</span> exists.</p>
+          <p class="step"><span class="tex">g(-x)=(-x)^3+\dfrac{4}{-x}=-x^3-\dfrac{4}{x}</span>.</p>
+          <p class="step"><span class="tex">-g(x)=-\left(x^3+\dfrac{4}{x}\right)=-x^3-\dfrac{4}{x}</span>.</p>
+          <p class="final">Both sides match, so <span class="tex">g(-x)=-g(x)</span> when <span class="tex">x\neq 0</span>.</p>
+        </div>
+      </div>
+      <div class="q-part">
+        <button class="btn show" type="button" aria-expanded="false">Show solution · c</button>
+        <div class="sol">
+          <p class="step">Replace the input <span class="tex">x</span> with <span class="tex">\dfrac{1}{x}</span>. Need <span class="tex">x\neq 0</span>, or <span class="tex">\dfrac{1}{x}</span> does not exist.</p>
+          <p class="step"><span class="tex">h\!\left(\dfrac{1}{x}\right)=\dfrac{\frac{1}{x}}{\left(\frac{1}{x}\right)^2+1}=\dfrac{\frac{1}{x}}{\frac{1}{x^2}+1}</span>.</p>
+          <p class="step">The denominator is <span class="tex">\dfrac{1}{x^2}+\dfrac{x^2}{x^2}=\dfrac{1+x^2}{x^2}</span>.</p>
+          <p class="step">Dividing by that fraction means multiply by its reciprocal: <span class="tex">\dfrac{1}{x}\times\dfrac{x^2}{1+x^2}=\dfrac{x}{1+x^2}</span>.</p>
+          <p class="final">That is <span class="tex">h(x)</span>, so <span class="tex">h\!\left(\dfrac{1}{x}\right)=h(x)</span> when <span class="tex">x\neq 0</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <p style="margin-top:1.5rem"><a class="btn ghost" href="tutorial.html">← Tutorial</a></p>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script src="../../course-solutions.js"></script>
+  <script>
+  (function(){
+    function texAll(){
+      document.querySelectorAll(".tex").forEach(function(n){
+        if (n.getAttribute("data-texed")) return;
+        if (!window.katex) return;
+        n.setAttribute("data-texed", "1");
+        katex.render(n.textContent, n, { throwOnError: false });
+      });
+    }
+    function boot(){ if (window.katex) texAll(); else setTimeout(boot, 80); }
+    window.addEventListener("load", boot);
+    setTimeout(boot, 300);
+  })();
+  </script>
+</body>
+</html>

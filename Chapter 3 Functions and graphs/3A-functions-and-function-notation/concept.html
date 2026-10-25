@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3A Concept · Functions and function notation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+</head>
+<body data-section="3A" data-page="concept" data-nav-depth="2" data-auth-sub="3A Concept">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Chapter 3 · Functions and graphs</span>
+    <h1>3A · Functions and function notation</h1>
+    <p>Direct path: Concept → Tutorial → Exercise.</p>
+  </header>
+  <div class="wrap">
+    <section class="card" id="idea">
+      <h2 class="section-h">What this section is about</h2>
+      <p class="lede">A function is a rule: put a number in, and the rule gives exactly one number out.</p>
+      <ul>
+        <li><strong>Picture it:</strong> an electrician charges <span class="tex">\$100</span> to visit, then <span class="tex">\$40</span> for each power point. If <span class="tex">x</span> power points are installed, the cost is <span class="tex">y=100+40x</span>.</li>
+        <li><strong>Input and output:</strong> <span class="tex">x</span> is the independent variable (you choose it). <span class="tex">y</span> is the dependent variable (it depends on <span class="tex">x</span>).</li>
+        <li><strong>Name the rule:</strong> <span class="tex">f(x)=100+40x</span> is read “<span class="tex">f</span> of <span class="tex">x</span>”. <span class="tex">f(2)=180</span> means “when the input is 2, the output is 180”.</li>
+        <li><strong>Swap the input:</strong> <span class="tex">f(a)</span> means replace every <span class="tex">x</span> with <span class="tex">a</span>. <span class="tex">f(a+1)</span> means replace every <span class="tex">x</span> with the whole bracket <span class="tex">(a+1)</span>.</li>
+        <li><strong>Sometimes the input is not allowed:</strong> you cannot divide by zero, and you cannot take the square root of a negative number in this course.</li>
+      </ul>
+      <p>Full detail and tiny worked examples live in the <a href="tutorial.html">Tutorial · theory</a>. This page only sets the scene.</p>
+    </section>
+    <section class="notes" id="prior">
+      <h2>Prior knowledge — quick notes</h2>
+      <p class="prior-lead">Keep these in mind. The Tutorial shows each one with numbers.</p>
+      <ul class="prior-list">
+        <li>Substitute: replace the letter with the number, then calculate.</li>
+        <li>A square: <span class="tex">(-3)^2=9</span>. The minus disappears because negative times negative is positive.</li>
+        <li>Expand <span class="tex">(a+h)^2=a^2+2ah+h^2</span>.</li>
+        <li>Order: brackets first, then powers, then multiply, then add.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2 class="section-h">Continue</h2>
+      <p><a class="btn" href="tutorial.html">Tutorial · theory →</a>
+         <a class="btn ghost" href="problems.html">Skip to Exercise 3A</a></p>
+    </section>
+    <footer class="site">Chapter 3 · 3A Concept → Tutorial → Exercise.</footer>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script>
+  (function(){
+    function texAll(){
+      document.querySelectorAll(".tex").forEach(function(n){
+        if (n.getAttribute("data-texed")) return;
+        if (!window.katex) return;
+        n.setAttribute("data-texed", "1");
+        katex.render(n.textContent, n, { throwOnError: false });
+      });
+    }
+    function boot(){ if (window.katex) texAll(); else setTimeout(boot, 80); }
+    window.addEventListener("load", boot);
+    setTimeout(boot, 300);
+  })();
+  </script>
+</body>
+</html>

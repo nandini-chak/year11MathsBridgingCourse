@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3A Tutorial · Functions and function notation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+</head>
+<body data-section="3A" data-page="tutorial" data-nav-depth="2" data-auth-sub="3A Tutorial">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Tutorial · theory</span>
+    <h1>3A · Functions and function notation</h1>
+    <p>Short key ideas and tiny worked examples. Read one example, then try the same steps on the Exercise.</p>
+  </header>
+  <div class="wrap">
+    <details class="teacher-note no-print"><summary><span class="ico">T</span> Teacher note</summary>
+      <div class="body">Classroom wording is condensed from the student chapter. The electrician, snail, and substitution examples match the ideas in §3A. Exercise answers were checked against <em>3A-Worked-Solutions.pdf</em>; a few printed answers in that PDF do not match the algebra and are corrected on the Exercise page.</div>
+    </details>
+
+    <section class="card" id="theory">
+      <h2 class="section-h">Theory · key ideas</h2>
+      <p class="lede">A function is a machine. One input goes in. One output comes out.</p>
+      <ul>
+        <li><strong>Rule:</strong> <span class="tex">y</span> is a function of <span class="tex">x</span> when the value of <span class="tex">y</span> is completely fixed once you know <span class="tex">x</span>.</li>
+        <li><strong>Names:</strong> <span class="tex">x</span> is independent. <span class="tex">y</span> is dependent.</li>
+        <li><strong>Notation:</strong> <span class="tex">f(x)</span> means “the output of the rule <span class="tex">f</span> when the input is <span class="tex">x</span>”. It is not <span class="tex">f</span> times <span class="tex">x</span>.</li>
+        <li><strong>Table:</strong> pick a few inputs and write the matching outputs beside them.</li>
+        <li><strong>Restriction:</strong> if the story only allows certain numbers (whole numbers, or times from 0 to 30 minutes), write that restriction next to the formula.</li>
+      </ul>
+      <div class="formula"><span class="tex">f(x)=100+40x</span></div>
+      <p>The machine for that rule:</p>
+      <table class="sol-table">
+        <thead><tr><th>Input <span class="tex">x</span></th><th>What the rule does</th><th>Output <span class="tex">f(x)</span></th></tr></thead>
+        <tbody>
+          <tr><td>0</td><td><span class="tex">100+40\times 0</span></td><td>100</td></tr>
+          <tr><td>1</td><td><span class="tex">100+40\times 1</span></td><td>140</td></tr>
+          <tr><td>2</td><td><span class="tex">100+40\times 2</span></td><td>180</td></tr>
+          <tr><td><span class="tex">x</span></td><td><span class="tex">100+40x</span></td><td><span class="tex">100+40x</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="mini">
+      <h2 class="section-h">Worked mini-examples</h2>
+
+      <div class="worked">
+        <h3>Example · put a number in</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">f(a)</span> means replace every <span class="tex">x</span> in the rule with <span class="tex">a</span>, then calculate.</p>
+        <p class="step"><strong>Step 1 ·</strong> Rule: <span class="tex">f(x)=x^2+5x</span>. For <span class="tex">f(3)</span>, replace <span class="tex">x</span> with 3: <span class="tex">3^2+5\times 3=9+15=24</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Same method: <span class="tex">f(0)=0^2+5\times 0=0</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> Same method: <span class="tex">f(-3)=(-3)^2+5\times(-3)=9-15=-6</span>. The square of <span class="tex">-3</span> is 9, not <span class="tex">-9</span>.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · words into a formula</h3>
+        <p class="step"><strong>Step 1 ·</strong> “Cube the number and subtract 7” means <span class="tex">g(x)=x^3-7</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Table for <span class="tex">x=-2,-1,0,1,2</span>: outputs <span class="tex">-15,-8,-7,-6,1</span>. Check one: <span class="tex">(-2)^3-7=-8-7=-15</span>.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · put an expression in</h3>
+        <p class="formula-quick"><strong>Formula:</strong> <span class="tex">(a+h)^2=a^2+2ah+h^2</span>. The middle term is twice the product of the two pieces inside the bracket.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">f(x)=x^2+5</span>. Then <span class="tex">f(a)=a^2+5</span>. Nothing to expand.</p>
+        <p class="step"><strong>Step 2 ·</strong> <span class="tex">f(a+1)=(a+1)^2+5=a^2+2a+1+5=a^2+2a+6</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> Same method: <span class="tex">f(a+h)=(a+h)^2+5=a^2+2ah+h^2+5</span>.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · a restriction from the story</h3>
+        <p class="step"><strong>Step 1 ·</strong> A snail climbs a 3 m wall at <span class="tex">10</span> cm each minute. <span class="tex">10</span> cm is <span class="tex">0.1</span> m, so the height after <span class="tex">x</span> minutes is <span class="tex">y=\dfrac{1}{10}x</span> metres.</p>
+        <p class="step"><strong>Step 2 ·</strong> Time to the top: <span class="tex">3\div 0.1=30</span> minutes. The snail starts at the bottom and stops at the top, so <span class="tex">0\le x\le 30</span>.</p>
+      </div>
+    </section>
+
+    <p><a class="btn" href="problems.html">Exercise 3A →</a>
+       <a class="btn ghost" href="concept.html">← Concept</a></p>
+    <footer class="site">Next: Exercise 3A.</footer>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script>
+  (function(){
+    function texAll(){
+      document.querySelectorAll(".tex").forEach(function(n){
+        if (n.getAttribute("data-texed")) return;
+        if (!window.katex) return;
+        n.setAttribute("data-texed", "1");
+        katex.render(n.textContent, n, { throwOnError: false });
+      });
+    }
+    function boot(){ if (window.katex) texAll(); else setTimeout(boot, 80); }
+    window.addEventListener("load", boot);
+    setTimeout(boot, 300);
+  })();
+  </script>
+</body>
+</html>
