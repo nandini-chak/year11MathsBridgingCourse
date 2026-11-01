@@ -8,7 +8,7 @@
     { code: "3C", title: "Review of linear graphs", href: "Chapter%203%20Functions%20and%20graphs/3C-review-of-linear-graphs/concept.html", ready: true },
     { code: "3D", title: "Quadratic functions — factoring and the graph", href: "Chapter%203%20Functions%20and%20graphs/3D-quadratic-functions-factoring-and-the-graph/concept.html", ready: true },
     { code: "3E", title: "Completing the square and the graph", href: "Chapter%203%20Functions%20and%20graphs/3E-completing-the-square-and-the-graph/concept.html", ready: true },
-    { code: "3F", title: "The quadratic formulae and the graph", ready: false },
+    { code: "3F", title: "The quadratic formulae and the graph", href: "Chapter%203%20Functions%20and%20graphs/3F-the-quadratic-formulae-and-the-graph/concept.html", ready: true },
     { code: "3G", title: "Powers, cubics, and circles", ready: false },
     { code: "3H", title: "Two graphs that have asymptotes", href: "Chapter%203%20Functions%20and%20graphs/3H-two-graphs-that-have-asymptotes/concept.html", ready: true },
     { code: "3I", title: "Direct and inverse variation", href: "Chapter%203%20Functions%20and%20graphs/3I-direct-and-inverse-variation/concept.html", ready: true }
