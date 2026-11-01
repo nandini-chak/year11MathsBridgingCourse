@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3G Tutorial · Powers, cubics, and circles</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+
+.stem p{margin:.42rem 0;line-height:1.5}
+.stem .intro{margin-bottom:.7rem}
+.howto{margin:.8rem 0 0;padding:.7rem .85rem;background:#f4f7fb;border-radius:12px;line-height:1.45}
+svg.plot text{font-family:"Source Sans 3","Segoe UI",sans-serif;font-size:13px;fill:#102033}
+svg.plot .halo{paint-order:stroke fill;stroke:#fbfaf7;stroke-width:4px;stroke-linejoin:round}
+svg.plot .grid{stroke:#e7e0d4;stroke-width:1}
+svg.plot .tick{stroke:#9aa3b0;stroke-width:1.2}
+svg.plot .curve{stroke-linejoin:round;stroke-linecap:round}
+svg.plot .curve.c3{stroke:#b45309;stroke-dasharray:2 4.5;stroke-width:2.4}
+svg.plot .pt{fill:#102033}
+.plot-frame{margin:.7rem 0}
+.plot-frame figcaption{margin:.35rem .15rem .1rem;font-size:.88rem;color:#5c6678;line-height:1.35}
+.legend .c3 i{border-color:#b45309;border-top-style:dotted;border-top-width:3px}
+
+  </style>
+</head>
+<body data-section="3G" data-page="tutorial" data-nav-depth="2" data-auth-sub="3G Tutorial">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Tutorial · theory</span>
+    <h1>3G · Powers, cubics, and circles</h1>
+    <p>Short key ideas and three tiny worked examples. Read one example, then try the same steps on the Exercise.</p>
+  </header>
+  <div class="wrap">
+
+    <section class="card" id="theory">
+      <h2 class="section-h">Theory · key ideas</h2>
+      <p class="lede">Plot a few points, then join them smoothly. The words even power, odd power, circle equation, and cubic intercept are defined on the <a href="concept.html">Concept</a> page.</p>
+      <ul>
+        <li><strong>Power <span class="tex">y=x^n</span>:</strong> try <span class="tex">x</span> between 0 and 1, and <span class="tex">x</span> bigger than 1. A higher index is flatter between <span class="tex">-1</span> and <span class="tex">1</span>, and steeper outside.</li>
+        <li><strong>Odd index</strong> (1, 3, 5, …): the curve passes through <span class="tex">(0,0)</span>. For 3, 5, 7, … it is flat there for a moment, then it climbs. A half-turn about the origin leaves it unchanged.</li>
+        <li><strong>Even index</strong> (2, 4, 6, …): the curve stays on or above the <span class="tex">x</span>-axis and turns at the origin. It is a mirror in the <span class="tex">y</span>-axis.</li>
+        <li><strong><span class="tex">y=\sqrt{x}</span>:</strong> only <span class="tex">x\ge 0</span>, and only the zero or positive answer. It is the top half of the sideways parabola <span class="tex">y^2=x</span>. It leaves the origin vertically. Domain <span class="tex">x\ge 0</span>. Range <span class="tex">y\ge 0</span>.</li>
+        <li><strong>Factored cubic:</strong> mark a dot where each factor is zero. The <span class="tex">y</span>-intercept is the height at <span class="tex">x=0</span>. Test one number in each gap and write the sign. A squared factor touches the axis and turns back. Do not mark the turning points. We cannot find those yet.</li>
+        <li><strong>Circle <span class="tex">x^2+y^2=r^2</span>:</strong> centre <span class="tex">(0,0)</span>, radius <span class="tex">r</span>. Mark <span class="tex">(\pm r,0)</span> and <span class="tex">(0,\pm r)</span>. Domain and range both run from <span class="tex">-r</span> to <span class="tex">r</span>. A full circle is not a function: a vertical line can hit it twice.</li>
+        <li><strong>Four halves:</strong> upper <span class="tex">y=\sqrt{r^2-x^2}</span>, lower <span class="tex">y=-\sqrt{r^2-x^2}</span>, right <span class="tex">x=\sqrt{r^2-y^2}</span>, left <span class="tex">x=-\sqrt{r^2-y^2}</span>.</li>
+      </ul>
+    </section>
+    <section class="card" id="mini">
+      <h2 class="section-h">Worked mini-examples</h2>
+      <div class="worked">
+        <h3>Example · a power graph</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> If the index is even, <span class="tex">(-x)^n=x^n</span> (mirror in the <span class="tex">y</span>-axis). If the index is odd, <span class="tex">(-x)^n=-x^n</span> (a half-turn about the origin leaves the graph unchanged).</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">y=x^3</span> is an odd power. <span class="tex">(-1)^3=-1</span> and <span class="tex">1^3=1</span>, so the points <span class="tex">(-1,-1)</span> and <span class="tex">(1,1)</span> are a half-turn apart.</p>
+        <p class="step"><strong>Step 2 ·</strong> Near the origin the output is tiny. <span class="tex">(0.5)^3=0.5\times 0.5\times 0.5=0.125</span>. The height 0.125 is much smaller than the input 0.5, so the curve is flat at <span class="tex">(0,0)</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> Join the points smoothly. The curve runs from the lower left, through the origin, into the upper right.</p>
+        <figure class="plot-frame"><svg class="plot" viewBox="0 0 346.0 402.4" role="img" aria-label="Graph of y equals x cubed"><defs><marker id="arr-tut-x3" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa3b0"/></marker></defs><line class="axis" x1="52.0" y1="197.2" x2="304.0" y2="197.2" marker-end="url(#arr-tut-x3)"/><line class="axis" x1="178.0" y1="366.4" x2="178.0" y2="28.0" marker-end="url(#arr-tut-x3)"/><line class="tick" x1="106.0" y1="193.2" x2="106.0" y2="201.2"/><line class="tick" x1="250.0" y1="193.2" x2="250.0" y2="201.2"/><line class="tick" x1="174.0" y1="341.2" x2="182.0" y2="341.2"/><line class="tick" x1="174.0" y1="53.2" x2="182.0" y2="53.2"/><path d="M 82.8 363.6 L 84.2 356.4 L 85.6 349.4 L 87.0 342.6 L 88.4 336.0 L 89.8 329.6 L 91.2 323.4 L 92.6 317.3 L 94.0 311.5 L 95.4 305.9 L 96.8 300.5 L 98.2 295.2 L 99.6 290.2 L 101.0 285.3 L 102.4 280.5 L 103.8 276.0 L 105.2 271.6 L 106.6 267.4 L 108.0 263.4 L 109.4 259.5 L 110.8 255.7 L 112.2 252.2 L 113.6 248.7 L 115.0 245.4 L 116.4 242.3 L 117.8 239.3 L 119.2 236.4 L 120.6 233.7 L 122.0 231.1 L 123.4 228.6 L 124.8 226.2 L 126.2 224.0 L 127.6 221.9 L 129.0 219.9 L 130.4 218.0 L 131.8 216.2 L 133.2 214.5 L 134.6 213.0 L 136.0 211.5 L 137.4 210.1 L 138.8 208.8 L 140.2 207.6 L 141.6 206.5 L 143.0 205.5 L 144.4 204.5 L 145.8 203.6 L 147.2 202.8 L 148.6 202.1 L 150.0 201.4 L 151.4 200.8 L 152.8 200.3 L 154.2 199.8 L 155.6 199.4 L 157.0 199.0 L 158.4 198.7 L 159.8 198.4 L 161.2 198.1 L 162.6 197.9 L 164.0 197.7 L 165.4 197.6 L 166.8 197.5 L 168.2 197.4 L 169.6 197.3 L 171.0 197.3 L 172.4 197.2 L 173.8 197.2 L 175.2 197.2 L 176.6 197.2 L 178.0 197.2 L 179.4 197.2 L 180.8 197.2 L 182.2 197.2 L 183.6 197.2 L 185.0 197.1 L 186.4 197.1 L 187.8 197.0 L 189.2 196.9 L 190.6 196.8 L 192.0 196.7 L 193.4 196.5 L 194.8 196.3 L 196.2 196.0 L 197.6 195.7 L 199.0 195.4 L 200.4 195.0 L 201.8 194.6 L 203.2 194.1 L 204.6 193.6 L 206.0 193.0 L 207.4 192.3 L 208.8 191.6 L 210.2 190.8 L 211.6 189.9 L 213.0 188.9 L 214.4 187.9 L 215.8 186.8 L 217.2 185.6 L 218.6 184.3 L 220.0 182.9 L 221.4 181.4 L 222.8 179.9 L 224.2 178.2 L 225.6 176.4 L 227.0 174.5 L 228.4 172.5 L 229.8 170.4 L 231.2 168.2 L 232.6 165.8 L 234.0 163.3 L 235.4 160.7 L 236.8 158.0 L 238.2 155.1 L 239.6 152.1 L 241.0 149.0 L 242.4 145.7 L 243.8 142.2 L 245.2 138.7 L 246.6 134.9 L 248.0 131.0 L 249.4 127.0 L 250.8 122.8 L 252.2 118.4 L 253.6 113.9 L 255.0 109.1 L 256.4 104.2 L 257.8 99.2 L 259.2 93.9 L 260.6 88.5 L 262.0 82.9 L 263.4 77.1 L 264.8 71.0 L 266.2 64.8 L 267.6 58.4 L 269.0 51.8 L 270.4 45.0 L 271.8 38.0 L 273.2 30.8" class="curve image"/><circle class="pt" cx="106.0" cy="269.2" r="3.5"/><circle class="pt" cx="178.0" cy="197.2" r="3.5"/><circle class="pt" cx="250.0" cy="125.2" r="3.5"/><text class="halo" x="302.0" y="189.2" text-anchor="end">x</text><text class="halo" x="186.0" y="42.0" text-anchor="start">y</text><text class="halo" x="106.0" y="215.2" text-anchor="middle">−1</text><text class="halo" x="250.0" y="215.2" text-anchor="middle">1</text><text class="halo" x="170.0" y="345.2" text-anchor="end">−2</text><text class="halo" x="170.0" y="57.2" text-anchor="end">2</text><text class="halo" x="98.0" y="275.2" text-anchor="end">(−1, −1)</text><text class="halo" x="166.0" y="187.2" text-anchor="end">(0, 0)</text><text class="halo" x="242.0" y="109.2" text-anchor="end">(1, 1)</text></svg><figcaption>Equal scale. Odd power: flat at the origin, then steep. Half-turn symmetry.</figcaption></figure>
+      </div>
+      <div class="worked">
+        <h3>Example · a cubic</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> A product is zero when any factor is zero. Those <span class="tex">x</span>-values are the <span class="tex">x</span>-intercepts. The <span class="tex">y</span>-intercept is the value at <span class="tex">x=0</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">y=(x+1)(x-2)(x-4)</span>. Set each factor to zero: <span class="tex">x=-1</span>, <span class="tex">x=2</span>, <span class="tex">x=4</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Height on the <span class="tex">y</span>-axis: <span class="tex">y=(0+1)(0-2)(0-4)=(1)(-2)(-4)=8</span>. Mark <span class="tex">(0,8)</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> Test one <span class="tex">x</span> in each gap. <span class="tex">x=-2</span> gives <span class="tex">(-1)(-4)(-6)=-24</span>, so the curve is below the axis on the left. <span class="tex">x=0</span> gives positive 8. <span class="tex">x=3</span> gives <span class="tex">(4)(1)(-1)=-4</span>, so negative. <span class="tex">x=5</span> gives <span class="tex">(6)(3)(1)=18</span>, so positive.</p>
+        <p class="step"><strong>Step 4 ·</strong> Sketch from below, cross at <span class="tex">-1</span>, stay above through <span class="tex">(0,8)</span>, cross at <span class="tex">2</span>, stay below, cross at <span class="tex">4</span>, then rise. Do not mark the turning points.</p>
+        <figure class="plot-frame"><svg class="plot" viewBox="0 0 428.8 386.0" role="img" aria-label="Cubic with zeros at -1, 2 and 4"><defs><marker id="arr-tut-cub" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa3b0"/></marker></defs><line class="axis" x1="48.0" y1="220.0" x2="388.8" y2="220.0" marker-end="url(#arr-tut-cub)"/><line class="axis" x1="134.4" y1="348.0" x2="134.4" y2="28.0" marker-end="url(#arr-tut-cub)"/><path d="M 66.7 340.8 L 68.4 328.5 L 70.2 316.5 L 71.9 304.9 L 73.6 293.7 L 75.3 282.8 L 77.0 272.2 L 78.7 262.0 L 80.4 252.2 L 82.1 242.6 L 83.8 233.5 L 85.5 224.6 L 87.2 216.1 L 88.9 207.9 L 90.6 200.0 L 92.3 192.4 L 94.0 185.1 L 95.7 178.1 L 97.4 171.5 L 99.1 165.1 L 100.8 159.0 L 102.5 153.2 L 104.2 147.7 L 105.9 142.4 L 107.6 137.5 L 109.3 132.8 L 111.0 128.3 L 112.8 124.2 L 114.5 120.3 L 116.2 116.6 L 117.9 113.2 L 119.6 110.0 L 121.3 107.1 L 123.0 104.4 L 124.7 101.9 L 126.4 99.6 L 128.1 97.6 L 129.8 95.8 L 131.5 94.2 L 133.2 92.9 L 134.9 91.7 L 136.6 90.7 L 138.3 89.9 L 140.0 89.3 L 141.7 88.9 L 143.4 88.7 L 145.1 88.7 L 146.8 88.8 L 148.5 89.1 L 150.2 89.6 L 151.9 90.2 L 153.6 91.0 L 155.4 91.9 L 157.1 93.0 L 158.8 94.3 L 160.5 95.7 L 162.2 97.2 L 163.9 98.8 L 165.6 100.6 L 167.3 102.5 L 169.0 104.5 L 170.7 106.6 L 172.4 108.9 L 174.1 111.2 L 175.8 113.6 L 177.5 116.2 L 179.2 118.8 L 180.9 121.6 L 182.6 124.4 L 184.3 127.3 L 186.0 130.2 L 187.7 133.3 L 189.4 136.4 L 191.1 139.5 L 192.8 142.7 L 194.5 146.0 L 196.2 149.4 L 198.0 152.7 L 199.7 156.2 L 201.4 159.6 L 203.1 163.1 L 204.8 166.6 L 206.5 170.2 L 208.2 173.7 L 209.9 177.3 L 211.6 180.9 L 213.3 184.5 L 215.0 188.1 L 216.7 191.7 L 218.4 195.2 L 220.1 198.8 L 221.8 202.4 L 223.5 205.9 L 225.2 209.5 L 226.9 213.0 L 228.6 216.4 L 230.3 219.9 L 232.0 223.2 L 233.7 226.6 L 235.4 229.9 L 237.1 233.1 L 238.8 236.3 L 240.6 239.4 L 242.3 242.5 L 244.0 245.5 L 245.7 248.4 L 247.4 251.2 L 249.1 254.0 L 250.8 256.6 L 252.5 259.2 L 254.2 261.7 L 255.9 264.1 L 257.6 266.3 L 259.3 268.5 L 261.0 270.6 L 262.7 272.5 L 264.4 274.3 L 266.1 276.0 L 267.8 277.5 L 269.5 279.0 L 271.2 280.2 L 272.9 281.4 L 274.6 282.4 L 276.3 283.2 L 278.0 283.9 L 279.7 284.4 L 281.4 284.8 L 283.2 284.9 L 284.9 285.0 L 286.6 284.8 L 288.3 284.4 L 290.0 283.9 L 291.7 283.2 L 293.4 282.3 L 295.1 281.2 L 296.8 279.8 L 298.5 278.3 L 300.2 276.6 L 301.9 274.6 L 303.6 272.4 L 305.3 270.0 L 307.0 267.4 L 308.7 264.6 L 310.4 261.5 L 312.1 258.1 L 313.8 254.5 L 315.5 250.7 L 317.2 246.6 L 318.9 242.2 L 320.6 237.6 L 322.3 232.7 L 324.0 227.6 L 325.8 222.1 L 327.5 216.4 L 329.2 210.4 L 330.9 204.1 L 332.6 197.6 L 334.3 190.7 L 336.0 183.5 L 337.7 176.0 L 339.4 168.2 L 341.1 160.1 L 342.8 151.7 L 344.5 142.9 L 346.2 133.8 L 347.9 124.4 L 349.6 114.6 L 351.3 104.6 L 353.0 94.1 L 354.7 83.3 L 356.4 72.2 L 358.1 60.7 L 359.8 48.8 L 361.5 36.6" class="curve image"/><circle class="pt" cx="86.4" cy="220.0" r="3.5"/><circle class="pt" cx="230.4" cy="220.0" r="3.5"/><circle class="pt" cx="326.4" cy="220.0" r="3.5"/><circle class="pt" cx="134.4" cy="92.0" r="3.5"/><text class="halo" x="386.8" y="212.0" text-anchor="end">x</text><text class="halo" x="142.4" y="42.0" text-anchor="start">y</text><text class="halo" x="80.4" y="208.0" text-anchor="end">(−1, 0)</text><text class="halo" x="236.4" y="206.0" text-anchor="start">(2, 0)</text><text class="halo" x="332.4" y="236.0" text-anchor="start">(4, 0)</text><text class="halo" x="124.4" y="86.0" text-anchor="end">(0, 8)</text></svg><figcaption>Scales differ: 1 unit across is longer than 1 unit up, so the bend between the zeros stays visible. Turning points are not marked.</figcaption></figure>
+      </div>
+      <div class="worked">
+        <h3>Example · a circle</h3>
+        <p class="formula-quick"><strong>Formula:</strong> <span class="tex">x^2+y^2=r^2</span> has centre <span class="tex">(0,0)</span> and radius <span class="tex">r</span>. The radius is the square root of the number on the right.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">x^2+y^2=4</span>. <span class="tex">r=\sqrt{4}=2</span>, because <span class="tex">2\times 2=4</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> On the axes, one coordinate is 0. <span class="tex">y=0</span> gives <span class="tex">x=\pm 2</span>. <span class="tex">x=0</span> gives <span class="tex">y=\pm 2</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> Domain <span class="tex">-2\le x\le 2</span>. Range <span class="tex">-2\le y\le 2</span>. The full circle is not a function.</p>
+        <figure class="plot-frame"><svg class="plot" viewBox="0 0 472.0 432.0" role="img" aria-label="Circle centre origin radius 2"><defs><marker id="arr-tut-circ" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa3b0"/></marker></defs><line class="axis" x1="62.0" y1="212.0" x2="422.0" y2="212.0" marker-end="url(#arr-tut-circ)"/><line class="axis" x1="242.0" y1="392.0" x2="242.0" y2="32.0" marker-end="url(#arr-tut-circ)"/><circle cx="242.0" cy="212.0" r="104.0" class="curve image"/><circle class="pt" cx="346.0" cy="212.0" r="3.5"/><circle class="pt" cx="138.0" cy="212.0" r="3.5"/><circle class="pt" cx="242.0" cy="108.0" r="3.5"/><circle class="pt" cx="242.0" cy="316.0" r="3.5"/><circle class="pt" cx="242.0" cy="212.0" r="2.6"/><text class="halo" x="420.0" y="204.0" text-anchor="end">x</text><text class="halo" x="250.0" y="46.0" text-anchor="start">y</text><text class="halo" x="234.0" y="228.0" text-anchor="end">(0, 0)</text><text class="halo" x="354.0" y="199.0" text-anchor="start">(2, 0)</text><text class="halo" x="130.0" y="199.0" text-anchor="end">(−2, 0)</text><text class="halo" x="254.0" y="90.0" text-anchor="start">(0, 2)</text><text class="halo" x="254.0" y="338.0" text-anchor="start">(0, −2)</text></svg><figcaption>Equal scale. Every point on the circle is 2 units from the origin.</figcaption></figure>
+      </div>
+    </section>
+    <p><a class="btn" href="problems.html">Exercise 3G →</a>
+       <a class="btn ghost" href="concept.html">← Concept</a></p>
+    <footer class="site">Next: Exercise 3G.</footer>
+
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script src="../../course-katex.js"></script>
+</body>
+</html>
