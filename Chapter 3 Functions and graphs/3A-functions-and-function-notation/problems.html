@@ -769,20 +769,6 @@
   <script src="../../course-auth.js"></script>
   <script src="../../course-nav.js"></script>
   <script src="../../course-solutions.js"></script>
-  <script>
-  (function(){
-    function texAll(){
-      document.querySelectorAll(".tex").forEach(function(n){
-        if (n.getAttribute("data-texed")) return;
-        if (!window.katex) return;
-        n.setAttribute("data-texed", "1");
-        katex.render(n.textContent, n, { throwOnError: false });
-      });
-    }
-    function boot(){ if (window.katex) texAll(); else setTimeout(boot, 80); }
-    window.addEventListener("load", boot);
-    setTimeout(boot, 300);
-  })();
-  </script>
+  <script src="../../course-katex.js"></script>
 </body>
 </html>

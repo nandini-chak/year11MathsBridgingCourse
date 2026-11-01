@@ -96,6 +96,10 @@ svg.plot .curve.image{stroke:var(--image)}
 .sol .step{margin:.45rem 0;line-height:1.45}
 .sol .step strong{color:var(--navy)}
 .sol .final{margin:.35rem 0 .6rem;font-weight:600}
+/* Multi-step algebra: one equals-step per line, left aligned */
+.eq-steps{margin:.25rem 0 .5rem;overflow-x:auto}
+.eq-steps .katex-display{margin:.15rem 0;text-align:left}
+.eq-steps .katex-display>.katex{text-align:left}
 .ok{font-size:.82rem;color:var(--ok);margin:.4rem 0 0}
 .band{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.15rem .45rem;border-radius:999px;background:#eef2ff;color:var(--navy);margin-left:.35rem}
 .band.dev{background:#ecfdf5}.band.ch{background:#fff4e5}
