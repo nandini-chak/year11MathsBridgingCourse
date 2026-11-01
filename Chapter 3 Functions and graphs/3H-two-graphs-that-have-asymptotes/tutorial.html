@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3H Tutorial · Two graphs that have asymptotes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+</head>
+<body data-section="3H" data-page="tutorial" data-nav-depth="2" data-auth-sub="3H Tutorial">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Tutorial · theory</span>
+    <h1>3H · Two graphs that have asymptotes</h1>
+    <p>Short key ideas and tiny worked examples. Read one example, then try the same steps on the Exercise.</p>
+  </header>
+  <div class="wrap">
+
+    <details class="teacher-note no-print"><summary><span class="ico">T</span> Teacher note</summary>
+      <div class="body">Classroom wording is condensed from the student chapter. The two families in this section are the exponential curve and the rectangular hyperbola. Exercise answers were checked against <em>3H-Worked-Solutions.pdf</em>. Printed slips in that PDF are listed once, on the Exercise page.</div>
+    </details>
+    <section class="card" id="theory">
+      <h2 class="section-h">Theory · key ideas</h2>
+      <p class="lede">Two families. Each one has a line it flattens toward.</p>
+      <ul>
+        <li><strong>Exponential:</strong> <span class="tex">y=a^x</span>, base <span class="tex">a>0</span> and <span class="tex">a\neq 1</span>. Three marks to show: y-intercept <span class="tex">(0,1)</span>, the point <span class="tex">(1,a)</span>, and the asymptote <span class="tex">y=0</span>.</li>
+        <li><strong>Domain and range for <span class="tex">y=a^x</span>:</strong> every real <span class="tex">x</span> is allowed. Every output is positive: <span class="tex">y>0</span>.</li>
+        <li><strong>Hyperbola:</strong> <span class="tex">y=\dfrac{k}{x}</span>. Two disconnected branches. No value at <span class="tex">x=0</span>.</li>
+        <li><strong>Sign of k:</strong> <span class="tex">k>0</span> puts the branches in quadrants 1 and 3. <span class="tex">k<0</span> puts them in quadrants 2 and 4. Quadrant 1 is top-right, 2 is top-left, 3 is bottom-left, 4 is bottom-right.</li>
+        <li><strong>Hyperbola asymptotes:</strong> both axes, <span class="tex">x=0</span> and <span class="tex">y=0</span>. Domain: <span class="tex">x\neq 0</span>. Range: <span class="tex">y\neq 0</span>.</li>
+        <li><strong>Limit sentence:</strong> <span class="tex">x\to -\infty</span> means <span class="tex">x</span> is a huge negative number. <span class="tex">y\to 0</span> means <span class="tex">y</span> gets very close to 0.</li>
+      </ul>
+    </section>
+    <section class="card" id="mini">
+      <h2 class="section-h">Worked mini-examples</h2>
+      <div class="worked">
+        <h3>Example · exponential <span class="tex">y=2^x</span></h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">y=a^x</span> with base <span class="tex">a>0</span> and <span class="tex">a\neq 1</span>. Any non-zero number to the power 0 is 1, so the graph crosses the y-axis at <span class="tex">(0,1)</span>. When <span class="tex">x=1</span>, <span class="tex">y=a</span> (the base). The asymptote is <span class="tex">y=0</span>. Domain: all real <span class="tex">x</span>. Range: <span class="tex">y>0</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">2^0=1</span>, so the y-intercept is <span class="tex">(0,1)</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> <span class="tex">2^1=2</span>, so the curve passes through <span class="tex">(1,2)</span>. The height is the base.</p>
+        <p class="step"><strong>Step 3 ·</strong> <span class="tex">2^{-1}=\dfrac{1}{2}</span> and <span class="tex">2^{-2}=\dfrac{1}{4}</span>. Going left, the outputs get smaller and stay positive. The asymptote is <span class="tex">y=0</span>.</p>
+        <p class="step"><strong>Step 4 ·</strong> Limit sentence: as <span class="tex">x\to -\infty</span>, <span class="tex">y\to 0</span>. Going right, <span class="tex">x\to \infty</span> and <span class="tex">y\to \infty</span>. There is no ceiling on the right.</p>
+        <div class="plot-frame"><svg class="plot" viewBox="0 0 480 340" role="img" aria-label="Sketch of y = 2 to the power x, asymptote y = 0, points (0, 1) and (1, 2)"><defs><marker id="arr-t1" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0f766e"/></marker></defs><line x1="48.0" y1="242.6" x2="456.0" y2="242.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="216.5" x2="456.0" y2="216.5" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="164.3" x2="456.0" y2="164.3" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="59.8" x2="456.0" y2="59.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="108.4" y1="304.0" x2="108.4" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="184.0" y1="304.0" x2="184.0" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="335.1" y1="304.0" x2="335.1" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="410.7" y1="304.0" x2="410.7" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="259.6" y1="300.1" x2="259.6" y2="28.4" stroke="#9aa3b0" stroke-width="1.3" fill="none"/>
+<line x1="48.0" y1="268.7" x2="76.7" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="94.8" y1="268.7" x2="123.6" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="141.7" y1="268.7" x2="170.4" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="188.5" y1="268.7" x2="217.2" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="235.4" y1="268.7" x2="264.1" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="282.2" y1="268.7" x2="310.9" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="329.1" y1="268.7" x2="357.8" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="375.9" y1="268.7" x2="404.6" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="422.8" y1="268.7" x2="451.5" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<path d="M 48.0,265.0 L 51.0,264.9 L 54.0,264.8 L 57.1,264.7 L 60.1,264.5 L 63.1,264.4 L 66.1,264.3 L 69.2,264.2 L 72.2,264.1 L 75.2,263.9 L 78.2,263.8 L 81.2,263.7 L 84.3,263.5 L 87.3,263.4 L 90.3,263.2 L 93.3,263.1 L 96.4,262.9 L 99.4,262.7 L 102.4,262.6 L 105.4,262.4 L 108.4,262.2 L 111.5,262.0 L 114.5,261.8 L 117.5,261.6 L 120.5,261.4 L 123.6,261.2 L 126.6,261.0 L 129.6,260.8 L 132.6,260.6 L 135.6,260.4 L 138.7,260.1 L 141.7,259.9 L 144.7,259.6 L 147.7,259.4 L 150.8,259.1 L 153.8,258.8 L 156.8,258.6 L 159.8,258.3 L 162.8,258.0 L 165.9,257.7 L 168.9,257.4 L 171.9,257.1 L 174.9,256.7 L 178.0,256.4 L 181.0,256.0 L 184.0,255.7 L 187.0,255.3 L 190.0,254.9 L 193.1,254.5 L 196.1,254.1 L 199.1,253.7 L 202.1,253.3 L 205.2,252.9 L 208.2,252.4 L 211.2,252.0 L 214.2,251.5 L 217.2,251.0 L 220.3,250.5 L 223.3,250.0 L 226.3,249.5 L 229.3,248.9 L 232.4,248.4 L 235.4,247.8 L 238.4,247.2 L 241.4,246.6 L 244.4,246.0 L 247.5,245.4 L 250.5,244.7 L 253.5,244.0 L 256.5,243.3 L 259.6,242.6 L 262.6,241.9 L 265.6,241.1 L 268.6,240.4 L 271.6,239.6 L 274.7,238.7 L 277.7,237.9 L 280.7,237.0 L 283.7,236.1 L 286.8,235.2 L 289.8,234.3 L 292.8,233.3 L 295.8,232.3 L 298.8,231.3 L 301.9,230.2 L 304.9,229.2 L 307.9,228.0 L 310.9,226.9 L 314.0,225.7 L 317.0,224.5 L 320.0,223.3 L 323.0,222.0 L 326.0,220.7 L 329.1,219.3 L 332.1,217.9 L 335.1,216.5 L 338.1,215.0 L 341.2,213.5 L 344.2,212.0 L 347.2,210.4 L 350.2,208.7 L 353.2,207.0 L 356.3,205.3 L 359.3,203.5 L 362.3,201.7 L 365.3,199.8 L 368.4,197.9 L 371.4,195.9 L 374.4,193.8 L 377.4,191.7 L 380.4,189.6 L 383.5,187.3 L 386.5,185.0 L 389.5,182.7 L 392.5,180.3 L 395.6,177.8 L 398.6,175.2 L 401.6,172.6 L 404.6,169.9 L 407.6,167.1 L 410.7,164.3 L 413.7,161.3 L 416.7,158.3 L 419.7,155.2 L 422.8,152.0 L 425.8,148.7 L 428.8,145.4 L 431.8,141.9 L 434.8,138.3 L 437.9,134.7 L 440.9,130.9 L 443.9,127.0 L 446.9,123.0 L 450.0,118.9 L 453.0,114.7" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="108.4" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="184.0" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="335.1" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="410.7" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="250.5" y="215.2" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="250.5" y="163.0" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="250.5" y="58.5" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">8</text>
+<text x="66.9" y="101.6" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#102033" style="">y = 2^x</text>
+<text x="422.0" y="296.2" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">y = 0</text>
+<circle cx="259.6" cy="242.6" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="134.9" y="216.5" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(0, 1)</text>
+<circle cx="335.1" cy="216.5" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="369.1" y="191.7" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(1, 2)</text></svg><p class="step">Dashed teal line is the asymptote <span class="tex">y=0</span>. Solid blue is the graph. Steps up the page are shorter than steps across, so the tall values fit.</p></div><p class="legend"><span><i style="border-top-color:#0f766e;border-top-style:dashed;"></i> asymptote y = 0</span><span><i style="border-top-color:#1d4ed8;"></i> the exponential curve</span></p>
+        <p class="step">Domain: all real <span class="tex">x</span>, or <span class="tex">(-\infty,\infty)</span>. Range: <span class="tex">y>0</span>, or <span class="tex">(0,\infty)</span>.</p>
+      </div>
+      <div class="worked">
+        <h3>Example · hyperbola <span class="tex">y=\dfrac{1}{x}</span></h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">y=\dfrac{k}{x}</span> is a rectangular hyperbola. <span class="tex">k</span> is a fixed numerator. The graph has no value at <span class="tex">x=0</span>. If <span class="tex">k>0</span>, the two branches are in quadrants 1 and 3. If <span class="tex">k<0</span>, the branches are in quadrants 2 and 4. The asymptotes are <span class="tex">x=0</span> and <span class="tex">y=0</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">x=1</span> gives <span class="tex">y=1</span>. <span class="tex">x=-1</span> gives <span class="tex">y=-1</span>. The points are <span class="tex">(1,1)</span> and <span class="tex">(-1,-1)</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> <span class="tex">x=0</span> is not allowed. Mark a star there, not a point.</p>
+        <p class="step"><strong>Step 3 ·</strong> Positive divided by positive stays in quadrant 1. Positive divided by negative stays in quadrant 3. The branches are disconnected.</p>
+        <p class="step"><strong>Step 4 ·</strong> Asymptotes <span class="tex">x=0</span> and <span class="tex">y=0</span>. Four limit sentences: as <span class="tex">x\to \infty</span>, <span class="tex">y\to 0</span>; as <span class="tex">x\to -\infty</span>, <span class="tex">y\to 0</span>; as <span class="tex">x\to 0^+</span>, <span class="tex">y\to \infty</span>; as <span class="tex">x\to 0^-</span>, <span class="tex">y\to -\infty</span>.</p>
+        <div class="plot-frame"><svg class="plot" viewBox="0 0 460 340" role="img" aria-label="Sketch of y = 1/x with branches in quadrants 1 and 3"><defs><marker id="arr-t2" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0f766e"/></marker></defs><line x1="88.0" y1="312.0" x2="88.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="116.4" y1="312.0" x2="116.4" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="144.8" y1="312.0" x2="144.8" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="173.2" y1="312.0" x2="173.2" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="201.6" y1="312.0" x2="201.6" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="258.4" y1="312.0" x2="258.4" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="286.8" y1="312.0" x2="286.8" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="315.2" y1="312.0" x2="315.2" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="343.6" y1="312.0" x2="343.6" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="372.0" y1="312.0" x2="372.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="312.0" x2="372.0" y2="312.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="283.6" x2="372.0" y2="283.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="255.2" x2="372.0" y2="255.2" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="226.8" x2="372.0" y2="226.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="198.4" x2="372.0" y2="198.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="141.6" x2="372.0" y2="141.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="113.2" x2="372.0" y2="113.2" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="84.8" x2="372.0" y2="84.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="56.4" x2="372.0" y2="56.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="28.0" x2="372.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="14.0" y1="170.0" x2="25.9" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="33.9" y1="170.0" x2="45.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="53.8" y1="170.0" x2="65.7" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="73.6" y1="170.0" x2="85.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="93.5" y1="170.0" x2="105.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="113.4" y1="170.0" x2="125.3" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="133.3" y1="170.0" x2="145.2" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="153.2" y1="170.0" x2="165.1" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="173.0" y1="170.0" x2="185.0" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="192.9" y1="170.0" x2="204.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="212.8" y1="170.0" x2="224.7" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="232.7" y1="170.0" x2="244.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="252.6" y1="170.0" x2="264.5" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="272.4" y1="170.0" x2="284.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="292.3" y1="170.0" x2="304.2" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="312.2" y1="170.0" x2="324.1" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="332.1" y1="170.0" x2="344.0" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="352.0" y1="170.0" x2="363.9" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="371.8" y1="170.0" x2="383.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="391.7" y1="170.0" x2="403.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="411.6" y1="170.0" x2="423.5" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="431.5" y1="170.0" x2="443.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="326.0" x2="230.0" y2="314.1" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="306.1" x2="230.0" y2="294.2" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="286.2" x2="230.0" y2="274.3" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="266.4" x2="230.0" y2="254.4" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="246.5" x2="230.0" y2="234.6" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="226.6" x2="230.0" y2="214.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="206.7" x2="230.0" y2="194.8" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="186.8" x2="230.0" y2="174.9" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="167.0" x2="230.0" y2="155.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="147.1" x2="230.0" y2="135.2" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="127.2" x2="230.0" y2="115.3" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="107.3" x2="230.0" y2="95.4" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="87.4" x2="230.0" y2="75.5" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="67.6" x2="230.0" y2="55.6" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="47.7" x2="230.0" y2="35.8" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="27.8" x2="230.0" y2="15.9" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<path d="M 238.0,68.6 L 240.2,91.1 L 242.5,105.5 L 244.8,115.4 L 247.0,122.7 L 249.3,128.2 L 251.6,132.6 L 253.9,136.2 L 256.1,139.1 L 258.4,141.6 L 260.7,143.7 L 262.9,145.5 L 265.2,147.1 L 267.5,148.5 L 269.8,149.7 L 272.0,150.8 L 274.3,151.8 L 276.6,152.7 L 278.8,153.5 L 281.1,154.2 L 283.4,154.9 L 285.7,155.5 L 287.9,156.1 L 290.2,156.6 L 292.5,157.1 L 294.8,157.5 L 297.0,158.0 L 299.3,158.4 L 301.6,158.7 L 303.8,159.1 L 306.1,159.4 L 308.4,159.7 L 310.7,160.0 L 312.9,160.3 L 315.2,160.5 L 317.5,160.8 L 319.7,161.0 L 322.0,161.2 L 324.3,161.4 L 326.6,161.6 L 328.8,161.8 L 331.1,162.0 L 333.4,162.2 L 335.6,162.4 L 337.9,162.5 L 340.2,162.7 L 342.5,162.8 L 344.7,163.0 L 347.0,163.1 L 349.3,163.2 L 351.6,163.4 L 353.8,163.5 L 356.1,163.6 L 358.4,163.7 L 360.6,163.8 L 362.9,163.9 L 365.2,164.0 L 367.5,164.1 L 369.7,164.2 L 372.0,164.3 L 374.3,164.4 L 376.5,164.5 L 378.8,164.6 L 381.1,164.7 L 383.4,164.7 L 385.6,164.8 L 387.9,164.9 L 390.2,165.0 L 392.4,165.0 L 394.7,165.1 L 397.0,165.2 L 399.3,165.2 L 401.5,165.3 L 403.8,165.4 L 406.1,165.4 L 408.4,165.5 L 410.6,165.5 L 412.9,165.6 L 415.2,165.6 L 417.4,165.7 L 419.7,165.7 L 422.0,165.8 L 424.3,165.8 L 426.5,165.9 L 428.8,165.9 L 431.1,166.0 L 433.3,166.0 L 435.6,166.1 L 437.9,166.1 L 440.2,166.2 L 442.4,166.2 L 444.7,166.2" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.3,173.8 L 17.6,173.8 L 19.8,173.8 L 22.1,173.9 L 24.4,173.9 L 26.7,174.0 L 28.9,174.0 L 31.2,174.1 L 33.5,174.1 L 35.7,174.2 L 38.0,174.2 L 40.3,174.3 L 42.6,174.3 L 44.8,174.4 L 47.1,174.4 L 49.4,174.5 L 51.6,174.5 L 53.9,174.6 L 56.2,174.6 L 58.5,174.7 L 60.7,174.8 L 63.0,174.8 L 65.3,174.9 L 67.6,175.0 L 69.8,175.0 L 72.1,175.1 L 74.4,175.2 L 76.6,175.3 L 78.9,175.3 L 81.2,175.4 L 83.5,175.5 L 85.7,175.6 L 88.0,175.7 L 90.3,175.8 L 92.5,175.9 L 94.8,176.0 L 97.1,176.1 L 99.4,176.2 L 101.6,176.3 L 103.9,176.4 L 106.2,176.5 L 108.4,176.6 L 110.7,176.8 L 113.0,176.9 L 115.3,177.0 L 117.5,177.2 L 119.8,177.3 L 122.1,177.5 L 124.4,177.6 L 126.6,177.8 L 128.9,178.0 L 131.2,178.2 L 133.4,178.4 L 135.7,178.6 L 138.0,178.8 L 140.3,179.0 L 142.5,179.2 L 144.8,179.5 L 147.1,179.7 L 149.3,180.0 L 151.6,180.3 L 153.9,180.6 L 156.2,180.9 L 158.4,181.3 L 160.7,181.6 L 163.0,182.0 L 165.2,182.5 L 167.5,182.9 L 169.8,183.4 L 172.1,183.9 L 174.3,184.5 L 176.6,185.1 L 178.9,185.8 L 181.2,186.5 L 183.4,187.3 L 185.7,188.2 L 188.0,189.2 L 190.2,190.3 L 192.5,191.5 L 194.8,192.9 L 197.1,194.5 L 199.3,196.3 L 201.6,198.4 L 203.9,200.9 L 206.1,203.8 L 208.4,207.4 L 210.7,211.8 L 213.0,217.3 L 215.2,224.6 L 217.5,234.5 L 219.8,248.9 L 222.0,271.4" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="116.4" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-4</text>
+<text x="238.0" y="283.0" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-4</text>
+<text x="144.8" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-3</text>
+<text x="238.0" y="254.6" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-3</text>
+<text x="173.2" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="238.0" y="226.2" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="201.6" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="238.0" y="197.8" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="258.4" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="222.0" y="141.0" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="286.8" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="222.0" y="112.6" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="315.2" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">3</text>
+<text x="222.0" y="84.2" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">3</text>
+<text x="343.6" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="222.0" y="55.8" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="140.5" y="69.2" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#102033" style="">y = 1/x</text>
+<text x="441.7" y="197.0" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">y = 0</text>
+<text x="197.3" y="18.3" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">x = 0</text>
+<circle cx="258.4" cy="141.6" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="271.2" y="126.0" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(1, 1)</text>
+<circle cx="201.6" cy="198.4" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="195.9" y="219.7" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(−1, −1)</text></svg><p class="step">Dashed teal lines are the asymptotes. Solid blue is the graph. Both axes use the same scale.</p></div><p class="legend"><span><i style="border-top-color:#0f766e;border-top-style:dashed;"></i> asymptotes x = 0 and y = 0</span><span><i style="border-top-color:#1d4ed8;"></i> the hyperbola</span></p>
+      </div>
+      <div class="worked">
+        <h3>Example · negative numerator <span class="tex">y=-\dfrac{1}{x}</span></h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> Same form <span class="tex">y=\dfrac{k}{x}</span>. A negative <span class="tex">k</span> turns every output into its opposite, so the branches move to quadrants 2 and 4. The asymptotes stay <span class="tex">x=0</span> and <span class="tex">y=0</span>.</p>
+        <p class="step"><strong>Same method ·</strong> <span class="tex">x=1</span> gives <span class="tex">y=-1</span>. <span class="tex">x=-1</span> gives <span class="tex">y=1</span>.</p>
+        <p class="step">The right branch is in quadrant 4. The left branch is in quadrant 2. The asymptotes are still both axes.</p>
+        <div class="plot-frame"><svg class="plot" viewBox="0 0 460 340" role="img" aria-label="Sketch of y = −1/x with branches in quadrants 2 and 4"><defs><marker id="arr-t3" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0f766e"/></marker></defs><line x1="88.0" y1="312.0" x2="88.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="116.4" y1="312.0" x2="116.4" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="144.8" y1="312.0" x2="144.8" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="173.2" y1="312.0" x2="173.2" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="201.6" y1="312.0" x2="201.6" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="258.4" y1="312.0" x2="258.4" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="286.8" y1="312.0" x2="286.8" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="315.2" y1="312.0" x2="315.2" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="343.6" y1="312.0" x2="343.6" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="372.0" y1="312.0" x2="372.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="312.0" x2="372.0" y2="312.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="283.6" x2="372.0" y2="283.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="255.2" x2="372.0" y2="255.2" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="226.8" x2="372.0" y2="226.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="198.4" x2="372.0" y2="198.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="141.6" x2="372.0" y2="141.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="113.2" x2="372.0" y2="113.2" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="84.8" x2="372.0" y2="84.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="56.4" x2="372.0" y2="56.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="88.0" y1="28.0" x2="372.0" y2="28.0" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="14.0" y1="170.0" x2="25.9" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="33.9" y1="170.0" x2="45.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="53.8" y1="170.0" x2="65.7" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="73.6" y1="170.0" x2="85.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="93.5" y1="170.0" x2="105.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="113.4" y1="170.0" x2="125.3" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="133.3" y1="170.0" x2="145.2" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="153.2" y1="170.0" x2="165.1" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="173.0" y1="170.0" x2="185.0" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="192.9" y1="170.0" x2="204.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="212.8" y1="170.0" x2="224.7" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="232.7" y1="170.0" x2="244.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="252.6" y1="170.0" x2="264.5" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="272.4" y1="170.0" x2="284.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="292.3" y1="170.0" x2="304.2" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="312.2" y1="170.0" x2="324.1" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="332.1" y1="170.0" x2="344.0" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="352.0" y1="170.0" x2="363.9" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="371.8" y1="170.0" x2="383.8" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="391.7" y1="170.0" x2="403.6" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="411.6" y1="170.0" x2="423.5" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="431.5" y1="170.0" x2="443.4" y2="170.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="326.0" x2="230.0" y2="314.1" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="306.1" x2="230.0" y2="294.2" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="286.2" x2="230.0" y2="274.3" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="266.4" x2="230.0" y2="254.4" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="246.5" x2="230.0" y2="234.6" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="226.6" x2="230.0" y2="214.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="206.7" x2="230.0" y2="194.8" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="186.8" x2="230.0" y2="174.9" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="167.0" x2="230.0" y2="155.0" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="147.1" x2="230.0" y2="135.2" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="127.2" x2="230.0" y2="115.3" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="107.3" x2="230.0" y2="95.4" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="87.4" x2="230.0" y2="75.5" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="67.6" x2="230.0" y2="55.6" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="47.7" x2="230.0" y2="35.8" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="230.0" y1="27.8" x2="230.0" y2="15.9" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<path d="M 238.0,271.4 L 240.2,248.9 L 242.5,234.5 L 244.8,224.6 L 247.0,217.3 L 249.3,211.8 L 251.6,207.4 L 253.9,203.8 L 256.1,200.9 L 258.4,198.4 L 260.7,196.3 L 262.9,194.5 L 265.2,192.9 L 267.5,191.5 L 269.8,190.3 L 272.0,189.2 L 274.3,188.2 L 276.6,187.3 L 278.8,186.5 L 281.1,185.8 L 283.4,185.1 L 285.7,184.5 L 287.9,183.9 L 290.2,183.4 L 292.5,182.9 L 294.8,182.5 L 297.0,182.0 L 299.3,181.6 L 301.6,181.3 L 303.8,180.9 L 306.1,180.6 L 308.4,180.3 L 310.7,180.0 L 312.9,179.7 L 315.2,179.5 L 317.5,179.2 L 319.7,179.0 L 322.0,178.8 L 324.3,178.6 L 326.6,178.4 L 328.8,178.2 L 331.1,178.0 L 333.4,177.8 L 335.6,177.6 L 337.9,177.5 L 340.2,177.3 L 342.5,177.2 L 344.7,177.0 L 347.0,176.9 L 349.3,176.8 L 351.6,176.6 L 353.8,176.5 L 356.1,176.4 L 358.4,176.3 L 360.6,176.2 L 362.9,176.1 L 365.2,176.0 L 367.5,175.9 L 369.7,175.8 L 372.0,175.7 L 374.3,175.6 L 376.5,175.5 L 378.8,175.4 L 381.1,175.3 L 383.4,175.3 L 385.6,175.2 L 387.9,175.1 L 390.2,175.0 L 392.4,175.0 L 394.7,174.9 L 397.0,174.8 L 399.3,174.8 L 401.5,174.7 L 403.8,174.6 L 406.1,174.6 L 408.4,174.5 L 410.6,174.5 L 412.9,174.4 L 415.2,174.4 L 417.4,174.3 L 419.7,174.3 L 422.0,174.2 L 424.3,174.2 L 426.5,174.1 L 428.8,174.1 L 431.1,174.0 L 433.3,174.0 L 435.6,173.9 L 437.9,173.9 L 440.2,173.8 L 442.4,173.8 L 444.7,173.8" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.3,166.2 L 17.6,166.2 L 19.8,166.2 L 22.1,166.1 L 24.4,166.1 L 26.7,166.0 L 28.9,166.0 L 31.2,165.9 L 33.5,165.9 L 35.7,165.8 L 38.0,165.8 L 40.3,165.7 L 42.6,165.7 L 44.8,165.6 L 47.1,165.6 L 49.4,165.5 L 51.6,165.5 L 53.9,165.4 L 56.2,165.4 L 58.5,165.3 L 60.7,165.2 L 63.0,165.2 L 65.3,165.1 L 67.6,165.0 L 69.8,165.0 L 72.1,164.9 L 74.4,164.8 L 76.6,164.7 L 78.9,164.7 L 81.2,164.6 L 83.5,164.5 L 85.7,164.4 L 88.0,164.3 L 90.3,164.2 L 92.5,164.1 L 94.8,164.0 L 97.1,163.9 L 99.4,163.8 L 101.6,163.7 L 103.9,163.6 L 106.2,163.5 L 108.4,163.4 L 110.7,163.2 L 113.0,163.1 L 115.3,163.0 L 117.5,162.8 L 119.8,162.7 L 122.1,162.5 L 124.4,162.4 L 126.6,162.2 L 128.9,162.0 L 131.2,161.8 L 133.4,161.6 L 135.7,161.4 L 138.0,161.2 L 140.3,161.0 L 142.5,160.8 L 144.8,160.5 L 147.1,160.3 L 149.3,160.0 L 151.6,159.7 L 153.9,159.4 L 156.2,159.1 L 158.4,158.7 L 160.7,158.4 L 163.0,158.0 L 165.2,157.5 L 167.5,157.1 L 169.8,156.6 L 172.1,156.1 L 174.3,155.5 L 176.6,154.9 L 178.9,154.2 L 181.2,153.5 L 183.4,152.7 L 185.7,151.8 L 188.0,150.8 L 190.2,149.7 L 192.5,148.5 L 194.8,147.1 L 197.1,145.5 L 199.3,143.7 L 201.6,141.6 L 203.9,139.1 L 206.1,136.2 L 208.4,132.6 L 210.7,128.2 L 213.0,122.7 L 215.2,115.4 L 217.5,105.5 L 219.8,91.1 L 222.0,68.6" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="116.4" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-4</text>
+<text x="222.0" y="283.0" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-4</text>
+<text x="144.8" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-3</text>
+<text x="222.0" y="254.6" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-3</text>
+<text x="173.2" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="222.0" y="226.2" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="201.6" y="181.9" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="222.0" y="197.8" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="258.4" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="238.0" y="141.0" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="286.8" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="238.0" y="112.6" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="315.2" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">3</text>
+<text x="238.0" y="84.2" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">3</text>
+<text x="343.6" y="159.2" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="238.0" y="55.8" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="268.3" y="46.5" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#102033" style="">y = −1/x</text>
+<text x="441.7" y="145.9" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">y = 0</text>
+<text x="241.4" y="19.7" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">x = 0</text>
+<circle cx="258.4" cy="198.4" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="156.2" y="226.8" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(1, −1)</text>
+<circle cx="201.6" cy="141.6" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="274.0" y="128.8" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(−1, 1)</text></svg><p class="step">Dashed teal lines are the asymptotes. Solid blue is the graph. Both axes use the same scale.</p></div><p class="legend"><span><i style="border-top-color:#0f766e;border-top-style:dashed;"></i> asymptotes x = 0 and y = 0</span><span><i style="border-top-color:#1d4ed8;"></i> the hyperbola</span></p>
+      </div>
+      <div class="worked">
+        <h3>Example · a negative exponent <span class="tex">y=2^{-x}</span></h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> <span class="tex">a^{-x}=\dfrac{1}{a^{x}}</span>. The graph of <span class="tex">y=a^{-x}</span> is <span class="tex">y=a^{x}</span> reflected in the y-axis. The y-intercept is still <span class="tex">(0,1)</span>. The height equals the base when <span class="tex">x=-1</span>. The asymptote is still <span class="tex">y=0</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> <span class="tex">2^{-0}=1</span>, so the y-intercept is still <span class="tex">(0,1)</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> At <span class="tex">x=-1</span>, <span class="tex">2^{-(-1)}=2^1=2</span>. The height equals the base on the left.</p>
+        <p class="step"><strong>Step 3 ·</strong> Going right, <span class="tex">2^{-1}=\dfrac{1}{2}</span> and <span class="tex">2^{-2}=\dfrac{1}{4}</span>. The curve falls toward <span class="tex">y=0</span>. This is <span class="tex">y=2^x</span> reflected in the y-axis.</p>
+        <div class="plot-frame"><svg class="plot" viewBox="0 0 480 340" role="img" aria-label="Sketch of y = 2 to the power −x, high on the left, asymptote y = 0"><defs><marker id="arr-t4" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0f766e"/></marker></defs><line x1="48.0" y1="242.6" x2="456.0" y2="242.6" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="216.5" x2="456.0" y2="216.5" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="164.3" x2="456.0" y2="164.3" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="48.0" y1="59.8" x2="456.0" y2="59.8" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="108.4" y1="304.0" x2="108.4" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="184.0" y1="304.0" x2="184.0" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="335.1" y1="304.0" x2="335.1" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="410.7" y1="304.0" x2="410.7" y2="28.4" stroke="#efe6d6" stroke-width="1" fill="none"/>
+<line x1="259.6" y1="300.1" x2="259.6" y2="28.4" stroke="#9aa3b0" stroke-width="1.3" fill="none"/>
+<line x1="48.0" y1="268.7" x2="76.7" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="94.8" y1="268.7" x2="123.6" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="141.7" y1="268.7" x2="170.4" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="188.5" y1="268.7" x2="217.2" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="235.4" y1="268.7" x2="264.1" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="282.2" y1="268.7" x2="310.9" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="329.1" y1="268.7" x2="357.8" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="375.9" y1="268.7" x2="404.6" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<line x1="422.8" y1="268.7" x2="451.5" y2="268.7" stroke="#0f766e" stroke-width="2.0" fill="none"/>
+<path d="M 48.0,86.8 L 51.0,91.8 L 54.0,96.7 L 57.1,101.4 L 60.1,105.9 L 63.1,110.4 L 66.1,114.7 L 69.2,118.9 L 72.2,123.0 L 75.2,127.0 L 78.2,130.9 L 81.2,134.7 L 84.3,138.3 L 87.3,141.9 L 90.3,145.4 L 93.3,148.7 L 96.4,152.0 L 99.4,155.2 L 102.4,158.3 L 105.4,161.3 L 108.4,164.3 L 111.5,167.1 L 114.5,169.9 L 117.5,172.6 L 120.5,175.2 L 123.6,177.8 L 126.6,180.3 L 129.6,182.7 L 132.6,185.0 L 135.6,187.3 L 138.7,189.6 L 141.7,191.7 L 144.7,193.8 L 147.7,195.9 L 150.8,197.9 L 153.8,199.8 L 156.8,201.7 L 159.8,203.5 L 162.8,205.3 L 165.9,207.0 L 168.9,208.7 L 171.9,210.4 L 174.9,212.0 L 178.0,213.5 L 181.0,215.0 L 184.0,216.5 L 187.0,217.9 L 190.0,219.3 L 193.1,220.7 L 196.1,222.0 L 199.1,223.3 L 202.1,224.5 L 205.2,225.7 L 208.2,226.9 L 211.2,228.0 L 214.2,229.2 L 217.2,230.2 L 220.3,231.3 L 223.3,232.3 L 226.3,233.3 L 229.3,234.3 L 232.4,235.2 L 235.4,236.1 L 238.4,237.0 L 241.4,237.9 L 244.4,238.7 L 247.5,239.6 L 250.5,240.4 L 253.5,241.1 L 256.5,241.9 L 259.6,242.6 L 262.6,243.3 L 265.6,244.0 L 268.6,244.7 L 271.6,245.4 L 274.7,246.0 L 277.7,246.6 L 280.7,247.2 L 283.7,247.8 L 286.8,248.4 L 289.8,248.9 L 292.8,249.5 L 295.8,250.0 L 298.8,250.5 L 301.9,251.0 L 304.9,251.5 L 307.9,252.0 L 310.9,252.4 L 314.0,252.9 L 317.0,253.3 L 320.0,253.7 L 323.0,254.1 L 326.0,254.5 L 329.1,254.9 L 332.1,255.3 L 335.1,255.7 L 338.1,256.0 L 341.2,256.4 L 344.2,256.7 L 347.2,257.1 L 350.2,257.4 L 353.2,257.7 L 356.3,258.0 L 359.3,258.3 L 362.3,258.6 L 365.3,258.8 L 368.4,259.1 L 371.4,259.4 L 374.4,259.6 L 377.4,259.9 L 380.4,260.1 L 383.5,260.4 L 386.5,260.6 L 389.5,260.8 L 392.5,261.0 L 395.6,261.2 L 398.6,261.4 L 401.6,261.6 L 404.6,261.8 L 407.6,262.0 L 410.7,262.2 L 413.7,262.4 L 416.7,262.6 L 419.7,262.7 L 422.8,262.9 L 425.8,263.1 L 428.8,263.2 L 431.8,263.4 L 434.8,263.5 L 437.9,263.7 L 440.9,263.8 L 443.9,263.9 L 446.9,264.1 L 450.0,264.2 L 453.0,264.3" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="108.4" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-2</text>
+<text x="184.0" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">-1</text>
+<text x="335.1" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">1</text>
+<text x="410.7" y="283.1" text-anchor="middle" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="250.5" y="215.2" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">2</text>
+<text x="250.5" y="163.0" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">4</text>
+<text x="250.5" y="58.5" text-anchor="end" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5c6678" style="">8</text>
+<text x="301.1" y="70.2" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#102033" style="">y = 2^(−x)</text>
+<text x="66.9" y="296.2" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f766e" style="">y = 0</text>
+<circle cx="259.6" cy="242.6" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="327.6" y="204.7" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(0, 1)</text>
+<circle cx="184.0" cy="216.5" r="3.4" fill="#1d4ed8" stroke="#fff" stroke-width="1.2"/>
+<text x="66.9" y="196.9" text-anchor="start" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#102033" style="">(−1, 2)</text></svg><p class="step">Dashed teal line is the asymptote <span class="tex">y=0</span>. Solid blue is the graph. Steps up the page are shorter than steps across, so the tall values fit.</p></div><p class="legend"><span><i style="border-top-color:#0f766e;border-top-style:dashed;"></i> asymptote y = 0</span><span><i style="border-top-color:#1d4ed8;"></i> the exponential curve</span></p>
+      </div>
+    </section>
+    <p><a class="btn" href="problems.html">Exercise 3H →</a>
+       <a class="btn ghost" href="concept.html">← Concept</a></p>
+    <footer class="site">Next: Exercise 3H.</footer>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  
+  <script src="../../course-katex.js"></script>
+</body>
+</html>
