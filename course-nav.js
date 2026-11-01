@@ -11,7 +11,7 @@
     { code: "3F", title: "The quadratic formulae and the graph", ready: false },
     { code: "3G", title: "Powers, cubics, and circles", ready: false },
     { code: "3H", title: "Two graphs that have asymptotes", ready: false },
-    { code: "3I", title: "Direct and inverse variation", ready: false }
+    { code: "3I", title: "Direct and inverse variation", href: "Chapter%203%20Functions%20and%20graphs/3I-direct-and-inverse-variation/concept.html", ready: true }
   ];
   const current = document.body.getAttribute("data-section") || "";
   function el(tag, attrs, html){

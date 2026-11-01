@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3I Tutorial · Direct and inverse variation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+    .plot-scroll{overflow-x:auto;margin:.35rem 0 .2rem}
+    .plot-scroll svg.plot{min-width:640px}
+    svg.plot text{font-family:"Source Sans 3","Segoe UI",sans-serif;font-size:13px;fill:#102033}
+    svg.plot .eq-label{font-size:14px;font-weight:600}
+  </style>
+</head>
+<body data-section="3I" data-page="tutorial" data-nav-depth="2" data-auth-sub="3I Tutorial">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Tutorial · theory</span>
+    <h1>3I · Direct and inverse variation</h1>
+    <p>Short key ideas and two tiny worked examples. Read one example, then try the same steps on the Exercise.</p>
+  </header>
+  <div class="wrap">
+    <details class="teacher-note no-print"><summary><span class="ico">T</span> Teacher note</summary>
+      <div class="body">Classroom wording is condensed from the student chapter. The gravel and travel examples use the same two rules as §3I: direct is <span class="tex">y=kx</span>, inverse is <span class="tex">y=k/x</span>. Exercise answers were recalculated from the questions. Printed slips in the worked-solutions PDF are listed once on the Exercise page.</div>
+    </details>
+
+    <section class="card" id="theory">
+      <h2 class="section-h">Theory · key ideas</h2>
+      <p class="lede">Find the constant from the pair you already know. Then the new value is one substitution.</p>
+      <ul>
+        <li><strong>Direct:</strong> <span class="tex">y=kx</span>. From a known pair, <span class="tex">k=y/x</span>. The line passes through <span class="tex">(0,0)</span>.</li>
+        <li><strong>Inverse:</strong> <span class="tex">y=k/x</span>. From a known pair, <span class="tex">k=xy</span>. The product stays fixed.</li>
+        <li><strong>Same <span class="tex">k</span>:</strong> do not start again for the second question. Use the <span class="tex">k</span> you just found.</li>
+        <li><strong>Double check:</strong> direct — double one, the other doubles. Inverse — double one, the other halves.</li>
+        <li><strong>Other powers:</strong> <span class="tex">y=kx^2</span>, <span class="tex">y=k/x^2</span>, or <span class="tex">y=k\sqrt{x}</span> still have one <span class="tex">k</span>. Substitute the known pair into that formula.</li>
+      </ul>
+      <div class="formula"><span class="tex">y=kx</span> &nbsp; or &nbsp; <span class="tex">y=\dfrac{k}{x}</span></div>
+    </section>
+
+    <section class="card" id="mini">
+      <h2 class="section-h">Worked mini-examples</h2>
+
+      <div class="worked">
+        <h3>Example · direct variation</h3>
+        <p>Gravel is sold by the tonne. The cost <span class="tex">C</span> dollars varies directly with the mass <span class="tex">m</span> tonnes. Four tonnes cost $180. What do 10 tonnes cost?</p>
+        <p class="formula-quick"><strong>Formula:</strong> <span class="tex">C=km</span> means cost varies directly with mass. Here <span class="tex">k</span> is the dollars charged for one tonne. From the given pair, <span class="tex">k=C/m</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> The given pair is <span class="tex">C=180</span> when <span class="tex">m=4</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Substitute that pair.</p>
+        <p class="step"><span class="tex">180=k\times 4</span></p>
+        <p class="step"><strong>Step 3 ·</strong> Divide both sides by 4.</p>
+        <p class="step"><span class="tex">k=\dfrac{180}{4}=45</span></p>
+        <p class="step">So <span class="tex">k=45</span> dollars per tonne, and the rule is <span class="tex">C=45m</span>.</p>
+        <p class="step"><strong>Step 4 ·</strong> New mass: <span class="tex">m=10</span>. Use the same <span class="tex">k</span>.</p>
+        <p class="step"><span class="tex">C=45\times 10=450</span></p>
+        <p class="step">Ten tonnes cost $450. The navy dot is the given pair. The teal square is the new value. Both sit on the line through the origin.</p>
+        <div class="plot-scroll"><svg class="plot" viewBox="0 0 420 280" role="img" aria-label="Straight line through the origin. Point (4, 180) and point (10, 450).">
+          <line class="axis" x1="56" y1="236" x2="400" y2="236" />
+          <polygon points="400,236 390,232 390,240" fill="#9aa3b0" />
+          <line class="axis" x1="56" y1="236" x2="56" y2="28" />
+          <polygon points="56,28 52,38 60,38" fill="#9aa3b0" />
+          <line x1="56" y1="165.2" x2="156" y2="165.2" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="156" y1="165.2" x2="156" y2="236" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="56" y1="68" x2="306" y2="68" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="306" y1="68" x2="306" y2="236" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="56" y1="236" x2="334" y2="50" stroke="#1d4ed8" stroke-width="2.5" />
+          <circle cx="156" cy="165.2" r="4.5" fill="#0c2340" />
+          <rect x="300" y="62" width="12" height="12" fill="#0f766e" />
+          <text x="188" y="122">(4, 180)</text>
+          <text x="150" y="52">(10, 450)</text>
+          <text class="eq-label" x="250" y="34">C = 45m</text>
+          <text x="70" y="24">C</text>
+          <text x="392" y="228">m</text>
+          <text x="48" y="169" text-anchor="end">180</text>
+          <text x="48" y="72" text-anchor="end">450</text>
+          <text x="156" y="254" text-anchor="middle">4</text>
+          <text x="306" y="254" text-anchor="middle">10</text>
+        </svg></div>
+        <p class="step">Horizontal axis: mass <span class="tex">m</span> in tonnes. Vertical axis: cost <span class="tex">C</span> in dollars.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · inverse variation</h3>
+        <p>A trip is 240 km. The time <span class="tex">t</span> hours varies inversely with the speed <span class="tex">v</span> km/h. At 60 km/h the trip takes 4 hours. How long does it take at 80 km/h?</p>
+        <p class="formula-quick"><strong>Formula:</strong> <span class="tex">t=k/v</span> means time varies inversely with speed. Here <span class="tex">k</span> is the fixed distance, in kilometres. From the given pair, <span class="tex">k=tv</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> The given pair is <span class="tex">t=4</span> when <span class="tex">v=60</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Substitute that pair.</p>
+        <p class="step"><span class="tex">4=\dfrac{k}{60}</span></p>
+        <p class="step"><strong>Step 3 ·</strong> Multiply both sides by 60.</p>
+        <p class="step"><span class="tex">k=4\times 60=240</span></p>
+        <p class="step">So <span class="tex">k=240</span> and the rule is <span class="tex">t=240/v</span>.</p>
+        <p class="step"><strong>Step 4 ·</strong> New speed: <span class="tex">v=80</span>. Use the same <span class="tex">k</span>.</p>
+        <p class="step"><span class="tex">t=\dfrac{240}{80}=3</span></p>
+        <p class="step">The trip takes 3 hours. Speed went up, so time went down. The navy dot is the given pair. The teal square is the new value.</p>
+        <div class="plot-scroll"><svg class="plot" viewBox="0 0 420 280" role="img" aria-label="Decreasing curve t = 240 over v. Points (60, 4) and (80, 3).">
+          <line class="axis" x1="56" y1="236" x2="400" y2="236" />
+          <polygon points="400,236 390,232 390,240" fill="#9aa3b0" />
+          <line class="axis" x1="56" y1="236" x2="56" y2="28" />
+          <polygon points="56,28 52,38 60,38" fill="#9aa3b0" />
+          <line x1="56" y1="140" x2="206" y2="140" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="206" y1="140" x2="206" y2="236" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="56" y1="162.5" x2="256" y2="162.5" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <line x1="256" y1="162.5" x2="256" y2="236" stroke="#9aa3b0" stroke-dasharray="5 4" />
+          <polyline fill="none" stroke="#1d4ed8" stroke-width="2.5" points="136.0,61.2 156.0,95.0 181.0,122.0 206.0,140.0 231.0,152.9 256.0,162.5 306.0,176.0 356.0,185.0" />
+          <circle cx="206" cy="140" r="4.5" fill="#0c2340" />
+          <rect x="250" y="156.5" width="12" height="12" fill="#0f766e" />
+          <text x="214" y="116">(60, 4)</text>
+          <text x="268" y="208">(80, 3)</text>
+          <text class="eq-label" x="248" y="48">t = 240/v</text>
+          <text x="70" y="24">t</text>
+          <text x="392" y="228">v</text>
+          <text x="48" y="144" text-anchor="end">4</text>
+          <text x="48" y="166" text-anchor="end">3</text>
+          <text x="206" y="254" text-anchor="middle">60</text>
+          <text x="256" y="254" text-anchor="middle">80</text>
+        </svg></div>
+        <p class="step">Horizontal axis: speed <span class="tex">v</span> in km/h. Vertical axis: time <span class="tex">t</span> in hours. The labels sit off the curve.</p>
+      </div>
+    </section>
+
+    <p><a class="btn" href="problems.html">Exercise 3I →</a>
+       <a class="btn ghost" href="concept.html">← Concept</a></p>
+    <footer class="site">Next: Exercise 3I.</footer>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script src="../../course-katex.js"></script>
+</body>
+</html>
