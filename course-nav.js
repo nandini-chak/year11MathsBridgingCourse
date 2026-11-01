@@ -5,7 +5,7 @@
   const ITEMS = [
     { code: "3A", title: "Functions and function notation", href: "Chapter%203%20Functions%20and%20graphs/3A-functions-and-function-notation/concept.html", ready: true },
     { code: "3B", title: "Functions, relations, and graphs", ready: false },
-    { code: "3C", title: "Review of linear graphs", ready: false },
+    { code: "3C", title: "Review of linear graphs", href: "Chapter%203%20Functions%20and%20graphs/3C-review-of-linear-graphs/concept.html", ready: true },
     { code: "3D", title: "Quadratic functions — factoring and the graph", ready: false },
     { code: "3E", title: "Completing the square and the graph", ready: false },
     { code: "3F", title: "The quadratic formulae and the graph", ready: false },
