@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3B Tutorial · Functions, relations, and graphs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+    svg.mini{width:100%;max-width:520px;height:auto;display:block;background:#fbfaf7;border:1px solid var(--line);border-radius:12px}
+    svg.mini .axis{stroke:#9aa3b0;stroke-width:1.3;fill:none}
+    svg.mini .curve{fill:none;stroke:#1d4ed8;stroke-width:2.4}
+    svg.mini .guide{fill:none;stroke:#c4a35a;stroke-width:1.2;stroke-dasharray:4 4}
+    svg.mini .vline{stroke:#b91c1c;stroke-width:1.7;stroke-dasharray:5 4}
+    svg.mini .dot{fill:#0c2340}
+    svg.mini text{font-family:"Source Sans 3",sans-serif;font-size:13px;fill:#102033}
+    svg.mini .muted{fill:#5c6678;font-size:12px}
+  </style>
+</head>
+<body data-section="3B" data-page="tutorial" data-nav-depth="2" data-auth-sub="3B Tutorial">
+  <div class="shell"><div class="main">
+  <div class="site-bar"><span>My Dream Australian Academy</span><a href="../../index.html">Course home</a></div>
+  <nav class="jump">
+    <a href="../../index.html">Course</a>
+    <a href="concept.html">Concept</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="problems.html">Exercise</a>
+  </nav>
+  <header class="hero">
+    <span class="kicker">Tutorial · theory</span>
+    <h1>3B · Functions, relations, and graphs</h1>
+    <p>Short key ideas and tiny worked examples. Read one example, then try the same steps on the Exercise.</p>
+  </header>
+  <div class="wrap">
+    <details class="teacher-note no-print"><summary><span class="ico">T</span> Teacher note</summary>
+      <div class="body">Classroom wording is a short retelling of the ball-height graph, domain and range, natural domain, and the vertical-line test. Exercise answers were recalculated from the questions. Where the worked-solutions PDF disagrees with the algebra or with the student-book figure, the correction is listed once on the Exercise page.</div>
+    </details>
+
+    <section class="card" id="theory">
+      <h2 class="section-h">Theory · key ideas</h2>
+      <p class="lede">Plot pairs. If each <span class="tex">x</span> has only one <span class="tex">y</span>, the picture is a function.</p>
+      <ul>
+        <li><strong>Table to points:</strong> each column of a table is one pair <span class="tex">(x, y)</span>.</li>
+        <li><strong>Join them:</strong> in this course the pairs usually join into a smooth curve. There are many more pairs than the ones in the table.</li>
+        <li><strong>Function test:</strong> no two points have the same <span class="tex">x</span>. A vertical line must not hit the graph twice.</li>
+        <li><strong>Domain:</strong> all the <span class="tex">x</span>-coordinates that appear. <strong>Range:</strong> all the <span class="tex">y</span>-coordinates that appear.</li>
+        <li><strong>Dots:</strong> a filled dot means that end is included. An open dot means that end is not included.</li>
+        <li><strong>Relation:</strong> any collection of pairs. A function is a relation that passes the vertical-line test.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="mini">
+      <h2 class="section-h">Worked mini-examples</h2>
+
+      <div class="worked">
+        <h3>Example · a ball, a table, and filled ends</h3>
+        <p class="formula-quick"><strong>Formula:</strong> height <span class="tex">y=5x(6-x)</span> metres, <span class="tex">x</span> seconds after the throw. Multiply 5 by <span class="tex">x</span>, then by <span class="tex">(6-x)</span>.</p>
+        <p class="step"><strong>Step 1 ·</strong> Build a table. One check: when <span class="tex">x=2</span>, <span class="tex">y=5\times 2\times(6-2)=10\times 4=40</span>.</p>
+        <table class="sol-table">
+          <thead><tr><th><span class="tex">x</span> (seconds)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead>
+          <tbody><tr><td><span class="tex">y</span> (metres)</td><td>0</td><td>25</td><td>40</td><td>45</td><td>40</td><td>25</td><td>0</td></tr></tbody>
+        </table>
+        <p class="step"><strong>Step 2 ·</strong> The seven pairs are <span class="tex">(0,0),\ (1,25),\ (2,40),\ (3,45),\ (4,40),\ (5,25),\ (6,0)</span>. Plot them and join with a smooth curve.</p>
+        <p class="step"><strong>Step 3 ·</strong> The ball has not been thrown when <span class="tex">x</span> is negative, and it is back on the ground at <span class="tex">x=6</span>. So the domain is <span class="tex">0\le x\le 6</span>, written <span class="tex">[0, 6]</span>. The square brackets mean both ends count. The filled dots on the graph say the same thing.</p>
+        <p class="step"><strong>Step 4 ·</strong> The heights run from 0 up to 45 and back to 0. The range is <span class="tex">0\le y\le 45</span>, written <span class="tex">[0, 45]</span>.</p>
+        <svg class="mini" viewBox="0 0 480 300" role="img" aria-label="Parabola of ball height from a filled dot at (0, 0) to a filled dot at (6, 0), highest point (3, 45).">
+          <line class="axis" x1="48" y1="18" x2="48" y2="262"/>
+          <line class="axis" x1="28" y1="248" x2="450" y2="248"/>
+          <polyline class="axis" points="44,30 48,14 52,30"/>
+          <polyline class="axis" points="438,244 454,248 438,252"/>
+          <line class="guide" x1="48" y1="68" x2="222" y2="68"/>
+          <path class="curve" d="M48.0,248.0 L55.2,233.3 L62.5,219.2 L69.8,205.8 L77.0,193.0 L84.2,180.8 L91.5,169.2 L98.8,158.3 L106.0,148.0 L113.2,138.3 L120.5,129.2 L127.8,120.8 L135.0,113.0 L142.2,105.8 L149.5,99.2 L156.8,93.3 L164.0,88.0 L171.2,83.3 L178.5,79.2 L185.8,75.8 L193.0,73.0 L200.2,70.8 L207.5,69.2 L214.8,68.3 L222.0,68.0 L229.2,68.3 L236.5,69.2 L243.8,70.8 L251.0,73.0 L258.2,75.8 L265.5,79.2 L272.8,83.3 L280.0,88.0 L287.2,93.3 L294.5,99.2 L301.8,105.8 L309.0,113.0 L316.2,120.8 L323.5,129.2 L330.8,138.3 L338.0,148.0 L345.2,158.3 L352.5,169.2 L359.8,180.8 L367.0,193.0 L374.2,205.8 L381.5,219.2 L388.8,233.3 L396.0,248.0"/>
+          <circle class="dot" cx="48" cy="248" r="4.2"/>
+          <circle class="dot" cx="396" cy="248" r="4.2"/>
+          <circle class="dot" cx="222" cy="68" r="3.4"/>
+          <text x="56" y="26">y</text>
+          <text x="408" y="236">x (seconds)</text>
+          <text x="8" y="72">45</text>
+          <text x="230" y="52">(3, 45)</text>
+          <text x="214" y="268">3</text>
+          <text x="28" y="268">0</text>
+          <text x="386" y="268">6</text>
+        </svg>
+        <p class="step"><strong>Step 5 ·</strong> At each time there is only one height, so no vertical line hits this curve twice. It is a function.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · read domain and range off a graph</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> Domain = the <span class="tex">x</span>-values that have a point of the graph above or below them. Range = the <span class="tex">y</span>-values that have a point of the graph to the left or right.</p>
+        <p class="step"><strong>Graph A ·</strong> The curve is a hill with highest point <span class="tex">(0, 4)</span>, and both ends keep going down. Every <span class="tex">x</span> is used, so the domain is all real <span class="tex">x</span>, written <span class="tex">(-\infty, \infty)</span>. The highest <span class="tex">y</span> is 4 and the curve goes down without a bottom, so the range is <span class="tex">y\le 4</span>, written <span class="tex">(-\infty, 4]</span>. The square bracket is next to 4 because the top point is included.</p>
+        <svg class="mini" viewBox="0 0 360 240" role="img" aria-label="Downward parabola with vertex (0, 4) and arrows going down on both sides.">
+          <line class="axis" x1="180" y1="16" x2="180" y2="220"/>
+          <line class="axis" x1="24" y1="150" x2="340" y2="150"/>
+          <polyline class="axis" points="176,28 180,12 184,28"/>
+          <polyline class="axis" points="328,146 344,150 328,154"/>
+          <path class="curve" d="M40,214 L56,190 L72,168 L88,148 L104,130 L120,114 L136,100 L152,88 L168,78 L180,74 L192,78 L208,88 L224,100 L240,114 L256,130 L272,148 L288,168 L304,190 L320,214"/>
+          <circle class="dot" cx="180" cy="74" r="3.5"/>
+          <text x="188" y="28">y</text>
+          <text x="322" y="142">x</text>
+          <text x="186" y="66">(0, 4)</text>
+          <text x="148" y="168">0</text>
+        </svg>
+        <p class="step"><strong>Graph B ·</strong> This curve starts at a filled dot <span class="tex">(-2, -8)</span> and ends at a filled dot <span class="tex">(2, 8)</span>. It does not go past those ends. Domain <span class="tex">[-2, 2]</span>. The lowest <span class="tex">y</span> is <span class="tex">-8</span> and the highest is 8, both included, so the range is <span class="tex">[-8, 8]</span>.</p>
+        <svg class="mini" viewBox="0 0 360 240" role="img" aria-label="Smooth curve from closed point (−2, −8) to closed point (2, 8).">
+          <line class="axis" x1="180" y1="16" x2="180" y2="224"/>
+          <line class="axis" x1="30" y1="120" x2="340" y2="120"/>
+          <polyline class="axis" points="176,28 180,12 184,28"/>
+          <polyline class="axis" points="328,116 344,120 328,124"/>
+          <path class="curve" d="M80,200 C120,190 150,150 180,120 C210,90 240,50 280,40"/>
+          <circle class="dot" cx="80" cy="200" r="4"/>
+          <circle class="dot" cx="280" cy="40" r="4"/>
+          <text x="188" y="28">y</text>
+          <text x="324" y="112">x</text>
+          <text x="24" y="196">(−2, −8)</text>
+          <text x="248" y="30">(2, 8)</text>
+        </svg>
+      </div>
+
+      <div class="worked">
+        <h3>Example · natural domain from a formula</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> If nobody writes a restriction, the natural domain is every <span class="tex">x</span> the formula will accept.</p>
+        <p class="step"><strong>a ·</strong> <span class="tex">y=\dfrac{1}{x-2}</span>. The bottom of a fraction cannot be 0.</p>
+        <p class="step"><span class="tex">x-2\neq 0</span>, so <span class="tex">x\neq 2</span>. Every other real number is allowed.</p>
+        <p class="step"><strong>b · Same idea, new block.</strong> <span class="tex">y=\sqrt{x-2}</span>. The inside of a square root cannot be negative.</p>
+        <p class="step"><span class="tex">x-2\ge 0</span>, so <span class="tex">x\ge 2</span>. That is the interval <span class="tex">[2, \infty)</span>.</p>
+      </div>
+
+      <div class="worked">
+        <h3>Example · a relation that fails the vertical-line test</h3>
+        <p class="formula-quick"><strong>Quick fact:</strong> A relation is any set of pairs. It is a function only when no <span class="tex">x</span> is used twice.</p>
+        <p class="step"><strong>Step 1 ·</strong> The circle <span class="tex">x^2+y^2=25</span> has radius 5 and centre <span class="tex">(0, 0)</span>. Both <span class="tex">(0, 5)</span> and <span class="tex">(0, -5)</span> are on it, because <span class="tex">0^2+5^2=25</span> and <span class="tex">0^2+(-5)^2=25</span>.</p>
+        <p class="step"><strong>Step 2 ·</strong> Those two points have the same <span class="tex">x</span>, namely <span class="tex">x=0</span>. The input 0 would have two outputs, 5 and <span class="tex">-5</span>.</p>
+        <p class="step"><strong>Step 3 ·</strong> The red vertical line is <span class="tex">x=0</span>. It hits the circle twice. One hit is enough to say: this relation is not a function.</p>
+        <p class="step"><strong>Step 4 ·</strong> <span class="tex">x</span> runs from <span class="tex">-5</span> to 5, and so does <span class="tex">y</span>. Domain <span class="tex">[-5, 5]</span>. Range <span class="tex">[-5, 5]</span>.</p>
+        <svg class="mini" viewBox="0 0 320 280" role="img" aria-label="Circle radius 5 with a red vertical line through (0, 5) and (0, −5).">
+          <line class="axis" x1="160" y1="16" x2="160" y2="260"/>
+          <line class="axis" x1="20" y1="140" x2="300" y2="140"/>
+          <polyline class="axis" points="156,28 160,12 164,28"/>
+          <polyline class="axis" points="288,136 304,140 288,144"/>
+          <circle class="curve" cx="160" cy="140" r="90"/>
+          <line class="vline" x1="160" y1="36" x2="160" y2="246"/>
+          <circle class="dot" cx="160" cy="50" r="4"/>
+          <circle class="dot" cx="160" cy="230" r="4"/>
+          <text x="100" y="28">y</text>
+          <text x="286" y="132">x</text>
+          <text x="188" y="36">(0, 5)</text>
+          <text x="188" y="258">(0, −5)</text>
+          <text x="262" y="124">5</text>
+          <text x="28" y="124">−5</text>
+          <text x="8" y="268">line x = 0</text>
+        </svg>
+      </div>
+    </section>
+
+    <p><a class="btn" href="problems.html">Exercise 3B →</a>
+       <a class="btn ghost" href="concept.html">← Concept</a></p>
+    <footer class="site">Next: Exercise 3B.</footer>
+  </div>
+  </div></div>
+  <script src="../../course-auth.js"></script>
+  <script src="../../course-nav.js"></script>
+  <script src="../../course-katex.js"></script>
+</body>
+</html>
