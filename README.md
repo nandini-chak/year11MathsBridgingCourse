@@ -4,4 +4,4 @@ Classroom pages for My Dream Australian Academy. Chapter 3 (Functions and graphs
 
 The textbook PDFs are not hosted here. Pages paraphrase the chapter and redraw any figures.
 
-Sign-in uses the same academy user and password as the Year 12 classroom site.
+Sign-in user is `nc`. The password is set in `course-auth.js` and is separate from the Year 12 classroom site.

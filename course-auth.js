@@ -1,6 +1,6 @@
 (function () {
   const USER = "nc";
-  const PASS = "23082006";
+  const PASS = "123456";
   const KEY = "mdaa-y11bridge-auth";
   function signedIn(){ try { return sessionStorage.getItem(KEY) === "1"; } catch(e){ return false; } }
   if (signedIn()) return;
